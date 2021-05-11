@@ -3,18 +3,22 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
+title: fendonl's blog<br>
+subtitle: 我将忠于自己<br>披星戴月<br>奔向理想和你！
+description: '机器学习菜鸟'
+keywords: 时间序列预测、图像处理、做菜
+author: haohaoli
+language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+url: https://lhhcoding.top
+root: /
+permalink: archives/:abbrlink.html
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32
+  rep: hex    # 进制：dec(default) and hex
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -40,7 +44,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -97,7 +101,22 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next #yilia
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 100
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -105,3 +124,33 @@ deploy:
   type: git
   repo: git@github.com:13293824182/13293824182.github.io.git
   branch: master
+
+
+# jsonContent:
+#     meta: false
+#     pages: false
+#     posts:
+#       title: true
+#       date: true
+#       path: true
+#       text: false
+#       raw: false
+#       content: false
+#       slug: false
+#       updated: false
+#       comments: false
+#       link: false
+#       permalink: false
+#       excerpt: false
+#       categories: false
+#       tags: true
+# Post wordcount display settings
+# Dependencies: https://github.com/willin/hexo-wordcount
+
+symbols_count_time:
+  symbols: true                # 文章字数统计
+  time: true                   # 文章阅读时长
+  total_symbols: true          # 站点总字数统计
+  total_time: true             # 站点总阅读时长
+  exclude_codeblock: false 
+
