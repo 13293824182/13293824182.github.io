@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/archives/4a17b156.html</url>
+    <content><![CDATA[<p>开始</p>
+<span id="more"></span>
+
+<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>hexo-换电脑更新博客</title>
+    <url>/archives/397eb78d.html</url>
+    <content><![CDATA[<p>开始</p>
+<span id="more"></span>
+
+
+<h2 id="步骤：在原电脑上操作，给-username-github-io-博客仓库创建hexo分支，并设为默认分支。（具体可参考这篇文章的操作，有图示）如果未给你的-github-账号添加过当前电脑生成的-ssh-key，需要创建-ssh-key-并添加到-github-账号上。（如何创建和添加-github-help-就有）随便一个目录下，命令行执行-git-clone-103-105-x74-x40-103-105-116-104-117-98-46-99-x6f-109-username-username-github-io-git-把仓库-clone-到本地。显示所有隐藏文件和文件夹，进入刚才-clone-到本地的仓库，删掉除了-git-文件夹以外的所有内容。命令行-cd-到-clone-的仓库，git-add-A-，git-commit-m-“–”，git-push-origin-hexo，把刚才删除操作引起的本地仓库变化更新到远程，此时刷新下-github-端博客hexo分支，应该已经被清空了。将上述-git-文件夹复制到本机本地博客根目录下（即含有-themes、source-等文件夹的那个目录），现在可以把上述-clone-的本地仓库删掉了，因为它已经没有用了，本机博客目录已经变成可以和-hexo-分支相连的仓库了。将博客目录下-themes-文件夹下每个主题文件夹里面的-git-gitignore-删掉。-cd-到博客目录，git-add-A-，git-commit-m-“–”，git-push-origin-hexo，将博客目录下所有文件更新到-hexo-分支。如果上一步没有删掉-git-gitignore，主题文件夹下内容将传不上去。至此原电脑上的操作结束。在新电脑上操作，先把新电脑上环境安装好，node-js、git、hexo，ssh-key-也创建和添加好。选好博客安装的目录，-git-clone-x67-105-116-64-103-105-x74-104-117-98-46-x63-111-109-username-username-github-io-git-。cd-到博客目录，npm-install、hexo-g-amp-amp-hexo-s，安装依赖，生成和启动博客服务。正常的话，浏览器打开-localhost-4000-可以看到博客了。至此新电脑操作完毕。以后无论在哪台电脑上，更新以及提交博客，依次执行，git-pull，git-add-A-，git-commit-m-“–”，git-push-origin-hexo，hexo-clean-amp-amp-hexo-g-amp-amp-hexo-d-即可。"><a href="#步骤：在原电脑上操作，给-username-github-io-博客仓库创建hexo分支，并设为默认分支。（具体可参考这篇文章的操作，有图示）如果未给你的-github-账号添加过当前电脑生成的-ssh-key，需要创建-ssh-key-并添加到-github-账号上。（如何创建和添加-github-help-就有）随便一个目录下，命令行执行-git-clone-103-105-x74-x40-103-105-116-104-117-98-46-99-x6f-109-username-username-github-io-git-把仓库-clone-到本地。显示所有隐藏文件和文件夹，进入刚才-clone-到本地的仓库，删掉除了-git-文件夹以外的所有内容。命令行-cd-到-clone-的仓库，git-add-A-，git-commit-m-“–”，git-push-origin-hexo，把刚才删除操作引起的本地仓库变化更新到远程，此时刷新下-github-端博客hexo分支，应该已经被清空了。将上述-git-文件夹复制到本机本地博客根目录下（即含有-themes、source-等文件夹的那个目录），现在可以把上述-clone-的本地仓库删掉了，因为它已经没有用了，本机博客目录已经变成可以和-hexo-分支相连的仓库了。将博客目录下-themes-文件夹下每个主题文件夹里面的-git-gitignore-删掉。-cd-到博客目录，git-add-A-，git-commit-m-“–”，git-push-origin-hexo，将博客目录下所有文件更新到-hexo-分支。如果上一步没有删掉-git-gitignore，主题文件夹下内容将传不上去。至此原电脑上的操作结束。在新电脑上操作，先把新电脑上环境安装好，node-js、git、hexo，ssh-key-也创建和添加好。选好博客安装的目录，-git-clone-x67-105-116-64-103-105-x74-104-117-98-46-x63-111-109-username-username-github-io-git-。cd-到博客目录，npm-install、hexo-g-amp-amp-hexo-s，安装依赖，生成和启动博客服务。正常的话，浏览器打开-localhost-4000-可以看到博客了。至此新电脑操作完毕。以后无论在哪台电脑上，更新以及提交博客，依次执行，git-pull，git-add-A-，git-commit-m-“–”，git-push-origin-hexo，hexo-clean-amp-amp-hexo-g-amp-amp-hexo-d-即可。" class="headerlink" title="步骤：在原电脑上操作，给 username.github.io 博客仓库创建hexo分支，并设为默认分支。（具体可参考这篇文章的操作，有图示）如果未给你的 github 账号添加过当前电脑生成的 ssh key，需要创建 ssh key 并添加到 github 账号上。（如何创建和添加 github help 就有）随便一个目录下，命令行执行 git clone &#103;&#105;&#x74;&#x40;&#103;&#105;&#116;&#104;&#117;&#98;&#46;&#99;&#x6f;&#109;:username/username.github.io.git 把仓库 clone 到本地。显示所有隐藏文件和文件夹，进入刚才 clone 到本地的仓库，删掉除了 .git 文件夹以外的所有内容。命令行 cd 到 clone 的仓库，git add -A ，git commit -m “–”，git push origin hexo，把刚才删除操作引起的本地仓库变化更新到远程，此时刷新下 github 端博客hexo分支，应该已经被清空了。将上述 .git 文件夹复制到本机本地博客根目录下（即含有 themes、source 等文件夹的那个目录），现在可以把上述 clone 的本地仓库删掉了，因为它已经没有用了，本机博客目录已经变成可以和 hexo 分支相连的仓库了。将博客目录下 themes 文件夹下每个主题文件夹里面的 .git .gitignore 删掉。 cd 到博客目录，git add -A ，git commit -m “–”，git push origin hexo，将博客目录下所有文件更新到 hexo 分支。如果上一步没有删掉 .git .gitignore，主题文件夹下内容将传不上去。至此原电脑上的操作结束。在新电脑上操作，先把新电脑上环境安装好，node.js、git、hexo，ssh key 也创建和添加好。选好博客安装的目录， git clone &#x67;&#105;&#116;&#64;&#103;&#105;&#x74;&#104;&#117;&#98;&#46;&#x63;&#111;&#109;:username/username.github.io.git 。cd 到博客目录，npm install、hexo g &amp;&amp; hexo s，安装依赖，生成和启动博客服务。正常的话，浏览器打开 localhost:4000 可以看到博客了。至此新电脑操作完毕。以后无论在哪台电脑上，更新以及提交博客，依次执行，git pull，git add -A ，git commit -m “–”，git push origin hexo，hexo clean &amp;&amp; hexo g &amp;&amp; hexo d 即可。"></a>步骤：在原电脑上操作，给 username.github.io 博客仓库创建hexo分支，并设为默认分支。（具体可参考这篇文章的操作，有图示）如果未给你的 github 账号添加过当前电脑生成的 ssh key，需要创建 ssh key 并添加到 github 账号上。（如何创建和添加 github help 就有）随便一个目录下，命令行执行 git clone <a href="mailto:&#103;&#105;&#x74;&#x40;&#103;&#105;&#116;&#104;&#117;&#98;&#46;&#99;&#x6f;&#109;">&#103;&#105;&#x74;&#x40;&#103;&#105;&#116;&#104;&#117;&#98;&#46;&#99;&#x6f;&#109;</a>:username/username.github.io.git 把仓库 clone 到本地。显示所有隐藏文件和文件夹，进入刚才 clone 到本地的仓库，删掉除了 .git 文件夹以外的所有内容。命令行 cd 到 clone 的仓库，git add -A ，git commit -m “–”，git push origin hexo，把刚才删除操作引起的本地仓库变化更新到远程，此时刷新下 github 端博客hexo分支，应该已经被清空了。将上述 .git 文件夹复制到本机本地博客根目录下（即含有 themes、source 等文件夹的那个目录），现在可以把上述 clone 的本地仓库删掉了，因为它已经没有用了，本机博客目录已经变成可以和 hexo 分支相连的仓库了。将博客目录下 themes 文件夹下每个主题文件夹里面的 .git .gitignore 删掉。 cd 到博客目录，git add -A ，git commit -m “–”，git push origin hexo，将博客目录下所有文件更新到 hexo 分支。如果上一步没有删掉 .git .gitignore，主题文件夹下内容将传不上去。至此原电脑上的操作结束。在新电脑上操作，先把新电脑上环境安装好，node.js、git、hexo，ssh key 也创建和添加好。选好博客安装的目录， git clone <a href="mailto:&#x67;&#105;&#116;&#64;&#103;&#105;&#x74;&#104;&#117;&#98;&#46;&#x63;&#111;&#109;">&#x67;&#105;&#116;&#64;&#103;&#105;&#x74;&#104;&#117;&#98;&#46;&#x63;&#111;&#109;</a>:username/username.github.io.git 。cd 到博客目录，npm install、hexo g &amp;&amp; hexo s，安装依赖，生成和启动博客服务。正常的话，浏览器打开 localhost:4000 可以看到博客了。至此新电脑操作完毕。以后无论在哪台电脑上，更新以及提交博客，依次执行，git pull，git add -A ，git commit -m “–”，git push origin hexo，hexo clean &amp;&amp; hexo g &amp;&amp; hexo d 即可。</h2><p>链接：<a href="https://www.zhihu.com/question/21193762/answer/489124966">https://www.zhihu.com/question/21193762/answer/489124966</a></p>
+<p>更换电脑操作一样的，跟之前的环境搭建一样，安装gitsudo apt-get install git<br>设置git全局邮箱和用户名git config –global user.name “yourgithubname”<br>git config –global user.email “yourgithubemail”<br>设置ssh keyssh-keygen -t rsa -C “youremail”<br>#生成后填到github和coding上（有coding平台的话）<br>#验证是否成功<br>ssh -T <a href="mailto:&#103;&#x69;&#x74;&#64;&#x67;&#x69;&#x74;&#104;&#117;&#98;&#x2e;&#99;&#111;&#x6d;">&#103;&#x69;&#x74;&#64;&#x67;&#x69;&#x74;&#104;&#117;&#98;&#x2e;&#99;&#111;&#x6d;</a><br>ssh -T <a href="mailto:&#x67;&#105;&#116;&#64;&#103;&#105;&#116;&#x2e;&#x63;&#x6f;&#100;&#105;&#110;&#103;&#46;&#x6e;&#101;&#x74;">&#x67;&#105;&#116;&#64;&#103;&#105;&#116;&#x2e;&#x63;&#x6f;&#100;&#105;&#110;&#103;&#46;&#x6e;&#101;&#x74;</a> #(有coding平台的话)<br>安装nodejssudo apt-get install nodejs<br>sudo apt-get install npm<br>安装hexo  sudo npm install hexo-cli -g<br>但是已经不需要初始化了，直接在任意文件夹下，git clone git@………………<br>然后进入克隆到的文件夹：cd xxx.github.io<br>npm install<br>npm install hexo-deployer-git –save<br>生成，部署：hexo g<br>hexo d<br>然后就可以开始写你的新博客了hexo new newpage<br>Tips:不要忘了，每次写完最好都把源文件上传一下git add .<br>git commit –m “xxxx”<br>git push<br>如果是在已经编辑过的电脑上，已经有clone文件夹了，那么，每次只要和远端同步一下就行了git pull</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>lightgbm</title>
+    <url>/archives/8df69e6b.html</url>
+    <content><![CDATA[<h1 id="Lightgbm-获取特征重要性"><a href="#Lightgbm-获取特征重要性" class="headerlink" title="Lightgbm 获取特征重要性"></a>Lightgbm 获取特征重要性</h1><span id="more"></span>
+
+<p>lightgbm主要分为两种方式训练，一种是通过原生API另外一种是通过scikit-learn中python API 方式</p>
+<blockquote>
+<p>该列是主要的特征</p>
+</blockquote>
+<p><a href="http://www.baidu.com/">点击跳转至百度</a><br><img src="https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片"></p>
+<p>1.<br>2.<br>3.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">feature_df = pd.DataFrame(&#123;</span><br><span class="line">        <span class="string">&#x27;column&#x27;</span>: feature_names,</span><br><span class="line">        <span class="string">&#x27;importance&#x27;</span>: lgb_model.feature_importances_,</span><br><span class="line">    &#125;).sort_values(by=<span class="string">&#x27;importance&#x27;</span>,ascending = <span class="literal">False</span>)</span><br><span class="line"><span class="comment">## 得到前一百个特征</span></span><br><span class="line">feature_df[:<span class="number">100</span>]</span><br></pre></td></tr></table></figure>
+
+<h1 id="回归评价指标和相关理解"><a href="#回归评价指标和相关理解" class="headerlink" title="回归评价指标和相关理解"></a>回归评价指标和相关理解</h1><h2 id="回归预测评价指标对比"><a href="#回归预测评价指标对比" class="headerlink" title="回归预测评价指标对比"></a>回归预测评价指标对比</h2><p>$ y_i 代表预测结果，y 代表真实值 $。</p>
+<ol>
+<li>MAE </li>
+</ol>
+<p>$$ \frac{1}{m} \sum_{i=1}^n|y-y_i| $$<br>衡量真实值和预测值之间的差距，并且得到的是一个平均值，MAE二阶不可导，在xgboost、lightgbm中使用近似函数代替。</p>
+<ol start="2">
+<li>MSE</li>
+</ol>
+<p>$$ \frac{1}{m} \sum_{i=1}^n(y-y_i)^2 $$<br>比MAE得到的值会更大，因为有一个平方，差值大于一会成倍放大，会更加倾向更新差值较大的数据。</p>
+<ol start="3">
+<li>RMSE</li>
+</ol>
+<p>$$ \sqrt{\frac{1}{m} \sum_{i=1}^n(y-y_i)^2} $$<br>和MSE类似，只不过将结果缩放到和原数据同等数量级上。</p>
+<ol start="4">
+<li>MAPE</li>
+</ol>
+<p>$$ \frac{1}{m} \sum_{i=1}^n|\frac{y-y_i}{y}| $$<br>用来衡量误差和占真实值比例，这也是在实际中常见的评估方式。</p>
+<ol start="5">
+<li>SMPE</li>
+</ol>
+<p>$$ \frac{100%}{m}\sum_{i=1}^n\frac{|y - y_i|}{(|y|+|y_i|)/2}$$<br>该损失函数是为了将MAPE中更加倾向优化小值的情况。</p>
+<ol start="6">
+<li>R2-score</li>
+</ol>
+<p>$$ R^2 = 1 - \frac{\sum_i{(y-y_i)^2}}{\sum_i{(\bar{y} - y_i)^2}} $$<br>该系数的取值范围为$(-\infty) - 0$,最好结果是1，预测值和真实值完全拟合。如果预测结果还没有使用平均值结果好就会达到小于零的值。</p>
+<ol start="7">
+<li> 矫正决定系数</li>
+</ol>
+<p>$$ R^2_{ad} = 1 - \frac{(1-R^2)(m-1)}{m-p-1} $$<br>其中m是样本数量，p是特征数量</p>
+<pre><code><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> mean_squared_error <span class="comment">#均方误差</span></span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> mean_absolute_error <span class="comment">#平方绝对误差</span></span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> r2_score<span class="comment">#R square</span></span><br><span class="line"><span class="comment">#调用</span></span><br><span class="line">MSE：mean_squared_error(y_test,y_predict)</span><br><span class="line">RMSE:np.sqrt(mean_squared_error(y_test,y_predict))</span><br><span class="line">MAE：mean_absolute_error(y_test,y_predict)</span><br><span class="line">R2：r2_score(y_test,y_predict)</span><br><span class="line">Adjusted_R2：:<span class="number">1</span>-((<span class="number">1</span>-r2_score(y_test,y_predict))*(m-<span class="number">1</span>))/(m-p-<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+</code></pre>
+<h2 id="思考如何评价一个模型是否拟合的好？"><a href="#思考如何评价一个模型是否拟合的好？" class="headerlink" title="思考如何评价一个模型是否拟合的好？"></a>思考如何评价一个模型是否拟合的好？</h2><p>假设有五个样本标签为 {10,15,20,13,18} 预测结果为 {9,17,18,10,16}<br>不同指标结果如下： MAE：2  MSE:4.4  RMSE: $\sqrt{4.4}$<br>MAPE: (0.1 + 2/15+2/20+3/13+2/18)/5 = 0.135<br>SMAPE: (2<em>1 / (10+9) + 2</em>2/(15+17) + 2<em>2/(20+18) + 2</em>3/(13+10) + 2*2/(16+18))/5 = 0.143<br>R2：0.65<br>R2-score: 这块没有特征的数量没有计算，在实际训练中该值是确定的，取决于特征数量</p>
+<p>RMSE 值比MA值大的原因是因为大于一的值会放大，解释RMSE为什么会对异常值更加敏感, 也会有小于1的值会被缩小，但是小于1的值缩小值远不及放大的值。假设两个样本：真实值{10,15}，预测值{9.5,10}<br>MAE：2.75 RMSE: 5.05</p>
+<h2 id="为什么MAE倾向于拟合平均值？RMSE倾向于中位数？MAPE对小值更加敏感？"><a href="#为什么MAE倾向于拟合平均值？RMSE倾向于中位数？MAPE对小值更加敏感？" class="headerlink" title="为什么MAE倾向于拟合平均值？RMSE倾向于中位数？MAPE对小值更加敏感？"></a>为什么MAE倾向于拟合平均值？RMSE倾向于中位数？MAPE对小值更加敏感？</h2><ol>
+<li>为什么MAE倾向于拟合平均值？</li>
+<li>RMSE倾向于拟合中位数？</li>
+<li>MAPE对小值更加敏感？</li>
+</ol>
+<h2 id="怎么对比不同时间序列的预测准确性？"><a href="#怎么对比不同时间序列的预测准确性？" class="headerlink" title="怎么对比不同时间序列的预测准确性？"></a>怎么对比不同时间序列的预测准确性？</h2><p>首先不同时间序列真实值并不是完全一致的。比如A的时间序列平均值为100，B的时间序列的平均值为10000，两个时间序列在量纲上存在差异，如果直接使用MAE，MSE, RMSE等指标会存在明显差异。<br>可以考虑将目标值最大最小变化到同一量纲上面</p>
+<h2 id="比较相同时间序列在不同模型中差异"><a href="#比较相同时间序列在不同模型中差异" class="headerlink" title="比较相同时间序列在不同模型中差异"></a>比较相同时间序列在不同模型中差异</h2><p>可以比较在不同模型下预测结果值的大小</p>
+]]></content>
+      <categories>
+        <category>机器学习</category>
+      </categories>
+      <tags>
+        <tag>回归评测指标</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>markdown语法记录</title>
+    <url>/archives/2a06da23.html</url>
+    <content><![CDATA[<h1 id="markdown-语法速查记录"><a href="#markdown-语法速查记录" class="headerlink" title="markdown 语法速查记录"></a>markdown 语法速查记录</h1><!--more ------->
+
+<h2 id="缩进、空格"><a href="#缩进、空格" class="headerlink" title="缩进、空格"></a>缩进、空格</h2><p>&emsp; = 2个&ensp; = 4个&nbsp;</p>
+<h2 id="文本加粗"><a href="#文本加粗" class="headerlink" title="文本加粗"></a>文本加粗</h2><p><strong>wenben</strong> or <strong>wenben</strong></p>
+<h2 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h2><p><em>斜体</em></p>
+<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><p><del>删除线</del></p>
+<h2 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h2><p><u>下划线</u> (后面记得加斜杠)</p>
+<h2 id="文本高亮"><a href="#文本高亮" class="headerlink" title="文本高亮"></a>文本高亮</h2><p><mark>高亮<mark></mark></mark></p>
+<p>$$ s^2 $$</p>
+<p>$$ \frac{1}{m} \sum_{i=1}^n|y-y_i| $$</p>
+]]></content>
+      <categories>
+        <category>markdown</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>next主题配置</title>
+    <url>/archives/c67bcb84.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>pandas总结</title>
+    <url>/archives/b8b772a5.html</url>
+    <content><![CDATA[<h2 id="pandas日常使用总结"><a href="#pandas日常使用总结" class="headerlink" title="pandas日常使用总结"></a>pandas日常使用总结</h2><h3 id="pandas-中没有获取众数"><a href="#pandas-中没有获取众数" class="headerlink" title="pandas 中没有获取众数"></a>pandas 中没有获取众数</h3><p>思路：通过统计次数，并且获取到最大次数即为众数</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">data[[&#39;diff_days&#39;,&#39;cust_no&#39;]].groupby(&#39;cust_no&#39;).agg(lambda x: x.value_counts().index[0]).reset_index()</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>日常总结</category>
+      </categories>
+      <tags>
+        <tag>pandas</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>回归模型中特征重要性选择</title>
+    <url>/archives/6fd9971a.html</url>
+    <content><![CDATA[<h1 id="回归模型中特征选择方法"><a href="#回归模型中特征选择方法" class="headerlink" title="回归模型中特征选择方法"></a>回归模型中特征选择方法</h1><!--more --------->
+
+<p><img src="/archives/6fd9971a/1.jpg#width-full" alt="计算公式"></p>
+<h2 id="协方差对于单变量选择"><a href="#协方差对于单变量选择" class="headerlink" title="协方差对于单变量选择"></a>协方差对于单变量选择</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 计算变量的方差</span><br><span class="line"># 如果方差接近于0，也就是该特征的特征值之间基本上没有差异，这个特征对于样本的区分并没有什么用，剔除</span><br><span class="line">from sklearn.feature_selection import VarianceThreshold</span><br><span class="line">selector &#x3D; VarianceThreshold(threshold&#x3D;0.1) #默认threshold&#x3D;0.0</span><br><span class="line">selector.fit_transform(df[numerical_features])</span><br><span class="line"></span><br><span class="line"># 查看各个特征的方差,</span><br><span class="line">selector.variances_ ,len(selector.variances_)</span><br><span class="line"></span><br><span class="line"># 特征对应方差</span><br><span class="line">all_used_features_dict &#x3D; dict(zip(numerical_features,selector.variances_ ))</span><br><span class="line">all_used_features_dict</span><br></pre></td></tr></table></figure>
+
+<h2 id="数值特征和目标值之间相关性"><a href="#数值特征和目标值之间相关性" class="headerlink" title="数值特征和目标值之间相关性"></a>数值特征和目标值之间相关性</h2><h3 id="1-协方差"><a href="#1-协方差" class="headerlink" title="1. 协方差"></a>1. 协方差</h3><p>&emsp;如果协方差为正，说明X,Y同向变化，协方差越大说明同向程度越高；</p>
+<p>&emsp;如果协方差维负，说明X，Y反向运动，协方差越小说明反向程度越高；</p>
+<p>&emsp;如果两个变量相互独立，那么协方差就是0，说明两个变量不相关。</p>
+<h3 id="2-pearson系数"><a href="#2-pearson系数" class="headerlink" title="2. pearson系数"></a>2. pearson系数</h3><h4 id><a href="#" class="headerlink" title></a></h4><p>&emsp;2.1 相关概念和值大小含义</p>
+<p>相关系数也可以看成协方差：一种剔除了两个变量量纲影响、标准化后的特殊协方差。<br><img src="/archives/6fd9971a/%E5%85%AC%E5%BC%8F.png" alt="计算公式 -w150"></p>
+<p>可以反映两个变量变化时是同向还是反向，如果同向变化就为正，反向变化就为负。由于它是标准化后的协方差，因此更重要的特性来了，它消除了两个变量变化幅度的影响，而只是单纯反应两个变量每单位变化时的相似程度。</p>
+<p><strong>假设对于Pearson r相关性，两个变量都应该是正态分布的</strong> </p>
+<p><strong>pearson数值大小衡量相关性：</strong></p>
+<p>0.8-1.0 极强相关 | 0.6-0.8 强相关 | 0.4-0.6 中等程度相关 |<br>0.2-0.4 弱相关 | 0.0-0.2 极弱相关或无相关</p>
+<h4 id="2-2-pearson-系数的优缺点："><a href="#2-2-pearson-系数的优缺点：" class="headerlink" title="2.2 pearson 系数的优缺点："></a>2.2 pearson 系数的优缺点：</h4><p>&emsp;优点： 可以通过数值对变量之间相关性衡量，正值代表正相关、负值代表负相关、0代表不相关</p>
+<p>&emsp;缺点： 没有对变量之间的关系进行提炼和学习，预测其实是学习不同特征之间的组合既关系。只能判别特征之间的线性相关性，如果是非线性相关就不可取。</p>
+<h4 id="2-3-适用场景"><a href="#2-3-适用场景" class="headerlink" title="2.3 适用场景"></a>2.3 适用场景</h4><ol>
+<li><p>两个变量之间是线性关系，都是连续数据。</p>
+</li>
+<li><p>两个变量的总体是正态分布，或接近正态的单峰分布。</p>
+</li>
+<li><p>两个变量的观测值是成对的，每对观测值之间相互独立。</p>
+<h4 id="2-4-相关代码"><a href="#2-4-相关代码" class="headerlink" title="2.4 相关代码"></a>2.4 相关代码</h4></li>
+<li><p>通过numpy</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">np.corrcoef([a,b,c,d])</span><br></pre></td></tr></table></figure></li>
+<li><p>pandas中corr()函数</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">plt.figure(figsize &#x3D; (25,25))</span><br><span class="line">#### 传入相关特征即可，输出为所有特征之间相关性</span><br><span class="line">corr_values1 &#x3D; data[features].corr()</span><br><span class="line">sns.heatmap(corr_values1, annot&#x3D;True,vmax&#x3D;1, square&#x3D;True, cmap&#x3D;&quot;Blues&quot;,fmt&#x3D;&#39;.2f&#39;)</span><br><span class="line">plt.tight_layout()</span><br><span class="line">plt.savefig(&#39;**.png&#39;,dpi&#x3D;600)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure></li>
+<li><p>利用scipy，输出两个值，第一个值为相关系数，第二个值越小代表两个之间相关性越高</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">from scipy.stats import pearsonr</span><br><span class="line">### 计算两个特征之间相关性，同时也可以计算特征和标签之间相关性</span><br><span class="line">print(&quot;Lower noise&quot;, df(x, x1))</span><br></pre></td></tr></table></figure></li>
+<li><p>计算每个特征和label之间相关性</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># drop_list 为不需要计算的特征或者可以是类别变量特征</span><br><span class="line">feature_list &#x3D; [col for col in df.columns if col not in drop_list]</span><br><span class="line">feature_import_df &#x3D; pd.DataFrame()</span><br><span class="line">for i,f in enumerate(feature_list):</span><br><span class="line">    feature_import_df.loc[i,&#39;feature_name&#39;] &#x3D; f</span><br><span class="line">    feature_import_df.loc[i,&#39;pearson&#39;] &#x3D; np.corroef(df[label],df[f])</span><br><span class="line">### 排序看特征和label之间相关性</span><br><span class="line">feature_import_df.sort_values(by&#x3D;[&#39;pearson&#39;],inplace &#x3D; True)</span><br></pre></td></tr></table></figure>
+<h4 id="2-5-通过pearson系数删选特征"><a href="#2-5-通过pearson系数删选特征" class="headerlink" title="2.5 通过pearson系数删选特征"></a>2.5 通过pearson系数删选特征</h4></li>
+<li><p>通过和label之间的相关性之间，通过设置阈值删选</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def del_corr_fea(df,cor_df):</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    df是原始数据，cor_df为通过pd.corr()获得特征间相关性矩阵，</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    cor_df &#x3D; cor_df.reset_index()</span><br><span class="line">    feature_col &#x3D; [col for col in df.columns if col not in drop_fea_list]</span><br><span class="line">    drop_fea &#x3D; []</span><br><span class="line">    for i,f in enumerate(feature_col):</span><br><span class="line">        if f not in drop_fea:</span><br><span class="line">            cor_df1 &#x3D; cor_df[i+1:][[f,&#39;index&#39;]]</span><br><span class="line">            cor_df_sel &#x3D; cor_df1[cor_df1[f]&gt;&#x3D;0.8]</span><br><span class="line">            cor_df_sel.sort_values(by&#x3D;[f],ascending &#x3D; False,inplace &#x3D; True)</span><br><span class="line">            del_name &#x3D; cor_df_sel[&#39;index&#39;].values.tolist()[1:]</span><br><span class="line">            drop_fea &#x3D; del_name + drop_fea</span><br><span class="line">    return drop_fea</span><br><span class="line">drop_list_no_p &#x3D; del_corr_fea(data_end,corr_values_fea_fea)</span><br></pre></td></tr></table></figure></li>
+<li><p>首先计算不同特征之间相关性，然后通过相关性取出相似性最高的几个特征，并保留和label间系数最高的特征</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def del_corr_fea(df,cor_df,cor_df_with_label):</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    df是原始数据，cor_df为通过pd.corr()获得特征间相关性矩阵，cor_df_with_label和标签之间相关性</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    cor_df &#x3D; cor_df.reset_index()</span><br><span class="line">    cor_df &#x3D; cor_df.rename(columns &#x3D; &#123;&#39;index&#39;:&#39;feature&#39;&#125;)</span><br><span class="line">    feature_col &#x3D; [col for col in df.columns if col not in drop_fea_list]</span><br><span class="line">    drop_fea &#x3D; []</span><br><span class="line">    for i,f in enumerate(feature_col):</span><br><span class="line">        if f not in drop_fea:</span><br><span class="line">            print(len(drop_fea))</span><br><span class="line">            cor_df1 &#x3D; cor_df[i:][[f,&#39;feature&#39;]]</span><br><span class="line">            cor_df_sel &#x3D; cor_df1[cor_df1[f]&gt;&#x3D;0.8]</span><br><span class="line">            sort_corr_df &#x3D; cor_df_sel.merge(cor_df_with_label,on &#x3D; &#39;feature&#39;,how &#x3D; &#39;left&#39;)</span><br><span class="line">            ## p 更改为相关性矩阵的列名</span><br><span class="line">            sort_corr_df.sort_values(by&#x3D;[&#39;p&#39;],ascending &#x3D; False,inplace &#x3D; True)</span><br><span class="line">            del_name &#x3D; sort_corr_df[&#39;feature&#39;].values.tolist()[1:]</span><br><span class="line">            drop_fea &#x3D; del_name + drop_fea</span><br><span class="line">    return drop_fea</span><br><span class="line">drop_feature_list &#x3D; del_corr_fea(data_end,corr_values_fea_fea,d_df)</span><br><span class="line">len(drop_feature_list)</span><br></pre></td></tr></table></figure>
+<h2 id="通过模型输出特征重要性（包括数值型和类别）"><a href="#通过模型输出特征重要性（包括数值型和类别）" class="headerlink" title="通过模型输出特征重要性（包括数值型和类别）"></a>通过模型输出特征重要性（包括数值型和类别）</h2></li>
+<li><p>最简单方式（回归模型，分类可以去官网查<br><a href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.SelectKBest.html#sklearn.feature_selection.SelectKBest.set_params">https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.SelectKBest.html#sklearn.feature_selection.SelectKBest.set_params</a>）</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">from sklearn.feature_selection import SelectKBest,f_regression</span><br><span class="line"></span><br><span class="line">print(data_end.shape)</span><br><span class="line"></span><br><span class="line">sk&#x3D;SelectKBest(f_regression,k&#x3D;300)</span><br><span class="line"># drop_columns 为不需要判别的列名</span><br><span class="line">new_train&#x3D;sk.fit_transform(data_end.drop(drop_columns,axis &#x3D; 1),data_end[&#39;label&#39;].astype(&#39;int&#39;))</span><br><span class="line">print(new_train.shape)</span><br><span class="line"></span><br><span class="line"># 获取对应列索引</span><br><span class="line">select_columns&#x3D;sk.get_support(indices &#x3D; True)</span><br><span class="line">print(select_columns)</span><br><span class="line">print(data_end.columns[select_columns])</span><br></pre></td></tr></table></figure></li>
+<li><p>通过树模型输出特征重要性，一般选用Xgboost、Lightgbm等，这里采用lightgbm示例。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import warnings</span><br><span class="line">warnings.filterwarnings(&#39;ignore&#39;)</span><br><span class="line">from lightgbm.sklearn import LGBMRegressor</span><br><span class="line"></span><br><span class="line">X_train,y_train &#x3D; train.drop([&#39;label&#39;],axis &#x3D; 1),train[&#39;label&#39;]</span><br><span class="line">other_params &#x3D; &#123;&#39;boosting_type&#39;:&#39;gbdt&#39;,</span><br><span class="line">&#39;colsample_bytree&#39;:0.6, &#39;importance_type&#39;:&#39;split&#39;,</span><br><span class="line">&#39;learning_rate&#39;:0.06999999999999999, &#39;max_depth&#39;:35, &#39;metric&#39;:&#39;mape&#39;,</span><br><span class="line">&#39;min_child_samples&#39;:30, &#39;min_child_weight&#39;:0.001, &#39;min_split_gain&#39;:0.0,</span><br><span class="line">&#39;n_estimators&#39;:1100, &#39;n_jobs&#39;:-1, &#39;num_leaves&#39;:45, &#39;objective&#39;:&#39;mape&#39;,</span><br><span class="line">&#39;random_state&#39;:2020, &#39;reg_alpha&#39;:0.2, &#39;reg_lambd&#39;:0.1, &#39;reg_lambda&#39;:0.4,</span><br><span class="line">&#39;silent&#39;:True, &#39;subsample&#39;:0.9999999999999999,</span><br><span class="line">&#39;subsample_for_bin&#39;:200000, &#39;subsample_freq&#39;:0&#125;</span><br><span class="line"></span><br><span class="line">model &#x3D; LGBMRegressor(**other_params)</span><br><span class="line">model.fit(X_train,y_train) </span><br><span class="line"></span><br><span class="line">feature_names &#x3D; list(X_train)</span><br><span class="line">feature_df &#x3D; pd.DataFrame(&#123;</span><br><span class="line">        &#39;column&#39;: feature_names,</span><br><span class="line">        &#39;importance&#39;: model.feature_importances_,</span><br><span class="line">    &#125;).sort_values(by&#x3D;&#39;importance&#39;,ascending &#x3D; False)</span><br><span class="line">## 得到前一百个特征</span><br><span class="line">feature_df[:100]</span><br><span class="line"></span><br><span class="line">### 最终根据特征重要性筛选出前面特征，也可以根据特征重要性看是否和自己做特征工程的想法是否一致。</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>回归预测</category>
+      </categories>
+      <tags>
+        <tag>特征选择</tag>
+      </tags>
+  </entry>
+</search>
