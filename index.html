@@ -232,10 +232,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-05-14 23:07:01 / 修改时间：23:38:12" itemprop="dateCreated datePublished" datetime="2021-05-14T23:07:01+08:00">2021-05-14</time>
+              <time title="创建时间：2021-05-14 23:07:01" itemprop="dateCreated datePublished" datetime="2021-05-14T23:07:01+08:00">2021-05-14</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-05-18 00:04:23" itemprop="dateModified" datetime="2021-05-18T00:04:23+08:00">2021-05-18</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -271,17 +277,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="markdown-语法速查记录"><a href="#markdown-语法速查记录" class="headerlink" title="markdown 语法速查记录"></a>markdown 语法速查记录</h1><!--more ------->
-
-<h2 id="缩进、空格"><a href="#缩进、空格" class="headerlink" title="缩进、空格"></a>缩进、空格</h2><p>&emsp; = 2个&ensp; = 4个&nbsp;</p>
-<h2 id="文本加粗"><a href="#文本加粗" class="headerlink" title="文本加粗"></a>文本加粗</h2><p><strong>wenben</strong> or <strong>wenben</strong></p>
-<h2 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h2><p><em>斜体</em></p>
-<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><p><del>删除线</del></p>
-<h2 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h2><p><u>下划线</u> (后面记得加斜杠)</p>
-<h2 id="文本高亮"><a href="#文本高亮" class="headerlink" title="文本高亮"></a>文本高亮</h2><p><mark>高亮<mark></mark></mark></p>
-<p>$$ s^2 $$</p>
-<p>$$ \frac{1}{m} \sum_{i=1}^n|y-y_i| $$</p>
-
+          <h1 id="markdown-语法速查记录"><a href="#markdown-语法速查记录" class="headerlink" title="markdown 语法速查记录"></a>markdown 语法速查记录</h1>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/archives/2a06da23.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -410,7 +414,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-17 22:41:04" itemprop="dateModified" datetime="2021-05-17T22:41:04+08:00">2021-05-17</time>
+                <time title="修改时间：2021-05-18 00:04:03" itemprop="dateModified" datetime="2021-05-18T00:04:03+08:00">2021-05-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -447,49 +451,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="回归模型中特征选择方法"><a href="#回归模型中特征选择方法" class="headerlink" title="回归模型中特征选择方法"></a>回归模型中特征选择方法</h1><!--more --------->
-
-<p><img src="/archives/6fd9971a/1.jpg#width-full" alt="计算公式"></p>
-<h2 id="协方差对于单变量选择"><a href="#协方差对于单变量选择" class="headerlink" title="协方差对于单变量选择"></a>协方差对于单变量选择</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># 计算变量的方差</span><br><span class="line"># 如果方差接近于0，也就是该特征的特征值之间基本上没有差异，这个特征对于样本的区分并没有什么用，剔除</span><br><span class="line">from sklearn.feature_selection import VarianceThreshold</span><br><span class="line">selector &#x3D; VarianceThreshold(threshold&#x3D;0.1) #默认threshold&#x3D;0.0</span><br><span class="line">selector.fit_transform(df[numerical_features])</span><br><span class="line"></span><br><span class="line"># 查看各个特征的方差,</span><br><span class="line">selector.variances_ ,len(selector.variances_)</span><br><span class="line"></span><br><span class="line"># 特征对应方差</span><br><span class="line">all_used_features_dict &#x3D; dict(zip(numerical_features,selector.variances_ ))</span><br><span class="line">all_used_features_dict</span><br></pre></td></tr></table></figure>
-
-<h2 id="数值特征和目标值之间相关性"><a href="#数值特征和目标值之间相关性" class="headerlink" title="数值特征和目标值之间相关性"></a>数值特征和目标值之间相关性</h2><h3 id="1-协方差"><a href="#1-协方差" class="headerlink" title="1. 协方差"></a>1. 协方差</h3><p>&emsp;如果协方差为正，说明X,Y同向变化，协方差越大说明同向程度越高；</p>
-<p>&emsp;如果协方差维负，说明X，Y反向运动，协方差越小说明反向程度越高；</p>
-<p>&emsp;如果两个变量相互独立，那么协方差就是0，说明两个变量不相关。</p>
-<h3 id="2-pearson系数"><a href="#2-pearson系数" class="headerlink" title="2. pearson系数"></a>2. pearson系数</h3><h4 id><a href="#" class="headerlink" title></a></h4><p>&emsp;2.1 相关概念和值大小含义</p>
-<p>相关系数也可以看成协方差：一种剔除了两个变量量纲影响、标准化后的特殊协方差。<br><img src="/archives/6fd9971a/%E5%85%AC%E5%BC%8F.png" alt="计算公式 -w150"></p>
-<p>可以反映两个变量变化时是同向还是反向，如果同向变化就为正，反向变化就为负。由于它是标准化后的协方差，因此更重要的特性来了，它消除了两个变量变化幅度的影响，而只是单纯反应两个变量每单位变化时的相似程度。</p>
-<p><strong>假设对于Pearson r相关性，两个变量都应该是正态分布的</strong> </p>
-<p><strong>pearson数值大小衡量相关性：</strong></p>
-<p>0.8-1.0 极强相关 | 0.6-0.8 强相关 | 0.4-0.6 中等程度相关 |<br>0.2-0.4 弱相关 | 0.0-0.2 极弱相关或无相关</p>
-<h4 id="2-2-pearson-系数的优缺点："><a href="#2-2-pearson-系数的优缺点：" class="headerlink" title="2.2 pearson 系数的优缺点："></a>2.2 pearson 系数的优缺点：</h4><p>&emsp;优点： 可以通过数值对变量之间相关性衡量，正值代表正相关、负值代表负相关、0代表不相关</p>
-<p>&emsp;缺点： 没有对变量之间的关系进行提炼和学习，预测其实是学习不同特征之间的组合既关系。只能判别特征之间的线性相关性，如果是非线性相关就不可取。</p>
-<h4 id="2-3-适用场景"><a href="#2-3-适用场景" class="headerlink" title="2.3 适用场景"></a>2.3 适用场景</h4><ol>
-<li><p>两个变量之间是线性关系，都是连续数据。</p>
-</li>
-<li><p>两个变量的总体是正态分布，或接近正态的单峰分布。</p>
-</li>
-<li><p>两个变量的观测值是成对的，每对观测值之间相互独立。</p>
-<h4 id="2-4-相关代码"><a href="#2-4-相关代码" class="headerlink" title="2.4 相关代码"></a>2.4 相关代码</h4></li>
-<li><p>通过numpy</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">np.corrcoef([a,b,c,d])</span><br></pre></td></tr></table></figure></li>
-<li><p>pandas中corr()函数</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">plt.figure(figsize &#x3D; (25,25))</span><br><span class="line">#### 传入相关特征即可，输出为所有特征之间相关性</span><br><span class="line">corr_values1 &#x3D; data[features].corr()</span><br><span class="line">sns.heatmap(corr_values1, annot&#x3D;True,vmax&#x3D;1, square&#x3D;True, cmap&#x3D;&quot;Blues&quot;,fmt&#x3D;&#39;.2f&#39;)</span><br><span class="line">plt.tight_layout()</span><br><span class="line">plt.savefig(&#39;**.png&#39;,dpi&#x3D;600)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure></li>
-<li><p>利用scipy，输出两个值，第一个值为相关系数，第二个值越小代表两个之间相关性越高</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">from scipy.stats import pearsonr</span><br><span class="line">### 计算两个特征之间相关性，同时也可以计算特征和标签之间相关性</span><br><span class="line">print(&quot;Lower noise&quot;, df(x, x1))</span><br></pre></td></tr></table></figure></li>
-<li><p>计算每个特征和label之间相关性</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># drop_list 为不需要计算的特征或者可以是类别变量特征</span><br><span class="line">feature_list &#x3D; [col for col in df.columns if col not in drop_list]</span><br><span class="line">feature_import_df &#x3D; pd.DataFrame()</span><br><span class="line">for i,f in enumerate(feature_list):</span><br><span class="line">    feature_import_df.loc[i,&#39;feature_name&#39;] &#x3D; f</span><br><span class="line">    feature_import_df.loc[i,&#39;pearson&#39;] &#x3D; np.corroef(df[label],df[f])</span><br><span class="line">### 排序看特征和label之间相关性</span><br><span class="line">feature_import_df.sort_values(by&#x3D;[&#39;pearson&#39;],inplace &#x3D; True)</span><br></pre></td></tr></table></figure>
-<h4 id="2-5-通过pearson系数删选特征"><a href="#2-5-通过pearson系数删选特征" class="headerlink" title="2.5 通过pearson系数删选特征"></a>2.5 通过pearson系数删选特征</h4></li>
-<li><p>通过和label之间的相关性之间，通过设置阈值删选</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">def del_corr_fea(df,cor_df):</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    df是原始数据，cor_df为通过pd.corr()获得特征间相关性矩阵，</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    cor_df &#x3D; cor_df.reset_index()</span><br><span class="line">    feature_col &#x3D; [col for col in df.columns if col not in drop_fea_list]</span><br><span class="line">    drop_fea &#x3D; []</span><br><span class="line">    for i,f in enumerate(feature_col):</span><br><span class="line">        if f not in drop_fea:</span><br><span class="line">            cor_df1 &#x3D; cor_df[i+1:][[f,&#39;index&#39;]]</span><br><span class="line">            cor_df_sel &#x3D; cor_df1[cor_df1[f]&gt;&#x3D;0.8]</span><br><span class="line">            cor_df_sel.sort_values(by&#x3D;[f],ascending &#x3D; False,inplace &#x3D; True)</span><br><span class="line">            del_name &#x3D; cor_df_sel[&#39;index&#39;].values.tolist()[1:]</span><br><span class="line">            drop_fea &#x3D; del_name + drop_fea</span><br><span class="line">    return drop_fea</span><br><span class="line">drop_list_no_p &#x3D; del_corr_fea(data_end,corr_values_fea_fea)</span><br></pre></td></tr></table></figure></li>
-<li><p>首先计算不同特征之间相关性，然后通过相关性取出相似性最高的几个特征，并保留和label间系数最高的特征</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">def del_corr_fea(df,cor_df,cor_df_with_label):</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    df是原始数据，cor_df为通过pd.corr()获得特征间相关性矩阵，cor_df_with_label和标签之间相关性</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    cor_df &#x3D; cor_df.reset_index()</span><br><span class="line">    cor_df &#x3D; cor_df.rename(columns &#x3D; &#123;&#39;index&#39;:&#39;feature&#39;&#125;)</span><br><span class="line">    feature_col &#x3D; [col for col in df.columns if col not in drop_fea_list]</span><br><span class="line">    drop_fea &#x3D; []</span><br><span class="line">    for i,f in enumerate(feature_col):</span><br><span class="line">        if f not in drop_fea:</span><br><span class="line">            print(len(drop_fea))</span><br><span class="line">            cor_df1 &#x3D; cor_df[i:][[f,&#39;feature&#39;]]</span><br><span class="line">            cor_df_sel &#x3D; cor_df1[cor_df1[f]&gt;&#x3D;0.8]</span><br><span class="line">            sort_corr_df &#x3D; cor_df_sel.merge(cor_df_with_label,on &#x3D; &#39;feature&#39;,how &#x3D; &#39;left&#39;)</span><br><span class="line">            ## p 更改为相关性矩阵的列名</span><br><span class="line">            sort_corr_df.sort_values(by&#x3D;[&#39;p&#39;],ascending &#x3D; False,inplace &#x3D; True)</span><br><span class="line">            del_name &#x3D; sort_corr_df[&#39;feature&#39;].values.tolist()[1:]</span><br><span class="line">            drop_fea &#x3D; del_name + drop_fea</span><br><span class="line">    return drop_fea</span><br><span class="line">drop_feature_list &#x3D; del_corr_fea(data_end,corr_values_fea_fea,d_df)</span><br><span class="line">len(drop_feature_list)</span><br></pre></td></tr></table></figure>
-<h2 id="通过模型输出特征重要性（包括数值型和类别）"><a href="#通过模型输出特征重要性（包括数值型和类别）" class="headerlink" title="通过模型输出特征重要性（包括数值型和类别）"></a>通过模型输出特征重要性（包括数值型和类别）</h2></li>
-<li><p>最简单方式（回归模型，分类可以去官网查<br><a target="_blank" rel="noopener" href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.SelectKBest.html#sklearn.feature_selection.SelectKBest.set_params">https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.SelectKBest.html#sklearn.feature_selection.SelectKBest.set_params</a>）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">from sklearn.feature_selection import SelectKBest,f_regression</span><br><span class="line"></span><br><span class="line">print(data_end.shape)</span><br><span class="line"></span><br><span class="line">sk&#x3D;SelectKBest(f_regression,k&#x3D;300)</span><br><span class="line"># drop_columns 为不需要判别的列名</span><br><span class="line">new_train&#x3D;sk.fit_transform(data_end.drop(drop_columns,axis &#x3D; 1),data_end[&#39;label&#39;].astype(&#39;int&#39;))</span><br><span class="line">print(new_train.shape)</span><br><span class="line"></span><br><span class="line"># 获取对应列索引</span><br><span class="line">select_columns&#x3D;sk.get_support(indices &#x3D; True)</span><br><span class="line">print(select_columns)</span><br><span class="line">print(data_end.columns[select_columns])</span><br></pre></td></tr></table></figure></li>
-<li><p>通过树模型输出特征重要性，一般选用Xgboost、Lightgbm等，这里采用lightgbm示例。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">import warnings</span><br><span class="line">warnings.filterwarnings(&#39;ignore&#39;)</span><br><span class="line">from lightgbm.sklearn import LGBMRegressor</span><br><span class="line"></span><br><span class="line">X_train,y_train &#x3D; train.drop([&#39;label&#39;],axis &#x3D; 1),train[&#39;label&#39;]</span><br><span class="line">other_params &#x3D; &#123;&#39;boosting_type&#39;:&#39;gbdt&#39;,</span><br><span class="line">&#39;colsample_bytree&#39;:0.6, &#39;importance_type&#39;:&#39;split&#39;,</span><br><span class="line">&#39;learning_rate&#39;:0.06999999999999999, &#39;max_depth&#39;:35, &#39;metric&#39;:&#39;mape&#39;,</span><br><span class="line">&#39;min_child_samples&#39;:30, &#39;min_child_weight&#39;:0.001, &#39;min_split_gain&#39;:0.0,</span><br><span class="line">&#39;n_estimators&#39;:1100, &#39;n_jobs&#39;:-1, &#39;num_leaves&#39;:45, &#39;objective&#39;:&#39;mape&#39;,</span><br><span class="line">&#39;random_state&#39;:2020, &#39;reg_alpha&#39;:0.2, &#39;reg_lambd&#39;:0.1, &#39;reg_lambda&#39;:0.4,</span><br><span class="line">&#39;silent&#39;:True, &#39;subsample&#39;:0.9999999999999999,</span><br><span class="line">&#39;subsample_for_bin&#39;:200000, &#39;subsample_freq&#39;:0&#125;</span><br><span class="line"></span><br><span class="line">model &#x3D; LGBMRegressor(**other_params)</span><br><span class="line">model.fit(X_train,y_train) </span><br><span class="line"></span><br><span class="line">feature_names &#x3D; list(X_train)</span><br><span class="line">feature_df &#x3D; pd.DataFrame(&#123;</span><br><span class="line">        &#39;column&#39;: feature_names,</span><br><span class="line">        &#39;importance&#39;: model.feature_importances_,</span><br><span class="line">    &#125;).sort_values(by&#x3D;&#39;importance&#39;,ascending &#x3D; False)</span><br><span class="line">## 得到前一百个特征</span><br><span class="line">feature_df[:100]</span><br><span class="line"></span><br><span class="line">### 最终根据特征重要性筛选出前面特征，也可以根据特征重要性看是否和自己做特征工程的想法是否一致。</span><br></pre></td></tr></table></figure></li>
-</ol>
-
+          <h1 id="回归模型中特征选择方法"><a href="#回归模型中特征选择方法" class="headerlink" title="回归模型中特征选择方法"></a>回归模型中特征选择方法</h1>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/archives/6fd9971a.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -791,7 +761,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-15 11:23:23" itemprop="dateModified" datetime="2021-05-15T11:23:23+08:00">2021-05-15</time>
+                <time title="修改时间：2021-05-18 00:04:00" itemprop="dateModified" datetime="2021-05-18T00:04:00+08:00">2021-05-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
