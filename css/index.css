@@ -3314,7 +3314,7 @@ blockquote footer cite:before {
   transition: all 0.5s;
 }
 #page-header.full_page {
-  height: 100px;
+  height: 250px;
   background-attachment: fixed;
 }
 #page-header.full_page #site-info {
