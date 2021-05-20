@@ -4,10 +4,10 @@
 
 # Site
 title: 木子李的小屋
-# subtitle: 我将忠于自己<br>披星戴月<br>奔向理想和你！
-# description: '机器学习菜鸟'
-keywords: 时间序列预测、图像处理、做菜
-author: 木子李的小屋
+subtitle: 我将忠于自己, 披星戴月, 奔向理想和你！
+description: '机器学习菜鸟'
+keywords: 时间序列预测、
+author: LHH
 language: zh-CN
 timezone: ''
 
