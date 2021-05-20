@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>fendonl&#39;s blog&lt;br&gt;</title>
+  <title>木子李的小屋</title>
   
-  <subtitle>我将忠于自己&lt;br&gt;披星戴月&lt;br&gt;奔向理想和你！</subtitle>
+  
   <link href="https://lhhcoding.top/atom.xml" rel="self"/>
   
   <link href="https://lhhcoding.top/"/>
@@ -10,7 +10,7 @@
   <id>https://lhhcoding.top/</id>
   
   <author>
-    <name>haohaoli</name>
+    <name>木子李的小屋</name>
     
   </author>
   
@@ -24,7 +24,7 @@
     <updated>2021-05-17T16:04:23.742Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;markdown-语法速查记录&quot;&gt;&lt;a href=&quot;#markdown-语法速查记录&quot; class=&quot;headerlink&quot; title=&quot;markdown 语法速查记录&quot;&gt;&lt;/a&gt;markdown 语法速查记录&lt;/h1&gt;</summary>
+    <summary type="html">&lt;h1&gt;markdown 语法速查记录&lt;/h1&gt;</summary>
     
     
     
@@ -55,10 +55,10 @@
     <link href="https://lhhcoding.top/archives/6fd9971a.html"/>
     <id>https://lhhcoding.top/archives/6fd9971a.html</id>
     <published>2021-05-14T07:23:23.000Z</published>
-    <updated>2021-05-17T16:04:03.232Z</updated>
+    <updated>2021-05-18T07:47:01.370Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;回归模型中特征选择方法&quot;&gt;&lt;a href=&quot;#回归模型中特征选择方法&quot; class=&quot;headerlink&quot; title=&quot;回归模型中特征选择方法&quot;&gt;&lt;/a&gt;回归模型中特征选择方法&lt;/h1&gt;</summary>
+    <summary type="html">&lt;h1&gt;回归模型中特征选择方法&lt;/h1&gt;</summary>
     
     
     
@@ -81,7 +81,10 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;pandas日常使用总结&quot;&gt;&lt;a href=&quot;#pandas日常使用总结&quot; class=&quot;headerlink&quot; title=&quot;pandas日常使用总结&quot;&gt;&lt;/a&gt;pandas日常使用总结&lt;/h2&gt;&lt;h3 id=&quot;pandas-中没有获取众数&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;h2 id=&quot;pandas日常使用总结&quot;&gt;pandas日常使用总结&lt;/h2&gt;
+&lt;h3 id=&quot;pandas-中没有获取众数&quot;&gt;pandas 中没有获取众数&lt;/h3&gt;
+&lt;p&gt;思路：通过统计次数，并且获取到最大次数即为众数&lt;/p&gt;
+&lt;figure class=&quot;highlight</summary>
         
       
     
@@ -130,7 +133,7 @@
     <updated>2021-05-17T16:04:00.545Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;Lightgbm-获取特征重要性&quot;&gt;&lt;a href=&quot;#Lightgbm-获取特征重要性&quot; class=&quot;headerlink&quot; title=&quot;Lightgbm 获取特征重要性&quot;&gt;&lt;/a&gt;Lightgbm 获取特征重要性&lt;/h1&gt;</summary>
+    <summary type="html">&lt;h1&gt;Lightgbm 获取特征重要性&lt;/h1&gt;</summary>
     
     
     
