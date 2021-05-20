@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: fendonl's blog<br>
-subtitle: 我将忠于自己<br>披星戴月<br>奔向理想和你！
-description: '机器学习菜鸟'
+title: 木子李的小屋
+# subtitle: 我将忠于自己<br>披星戴月<br>奔向理想和你！
+# description: '机器学习菜鸟'
 keywords: 时间序列预测、图像处理、做菜
-author: haohaoli
+author: 木子李的小屋
 language: zh-CN
 timezone: ''
 
@@ -101,7 +101,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next #yilia
+theme: butterfly #next #yilia
 feed:
   type: atom
   path: atom.xml
