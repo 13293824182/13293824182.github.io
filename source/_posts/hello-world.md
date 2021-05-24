@@ -1,7 +1,11 @@
 ---
 title: Hello World
 abbrlink: 4a17b156
+top_img: https://i.loli.net/2021/05/24/g3AbK4o79hFv81i.png
+cover: https://i.loli.net/2021/05/24/g3AbK4o79hFv81i.png
+
 ---
+
 
 开始
 <!--more-->

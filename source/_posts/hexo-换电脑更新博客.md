@@ -2,10 +2,11 @@
 title: hexo-换电脑更新博客
 abbrlink: 397eb78d
 date: 2021-05-12 11:18:03
+top_img: https://i.loli.net/2021/05/24/UAyeTu7MV2aifDx.jpg
+cover: https://i.loli.net/2021/05/24/UAyeTu7MV2aifDx.jpg
 tags:
 ---
 
-开始
 <!--more-->
 
 

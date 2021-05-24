@@ -4,6 +4,9 @@ tags: pandas
 categories: 日常总结
 abbrlink: b8b772a5
 date: 2021-05-13 16:59:18
+top_img: https://i.loli.net/2021/05/24/1BsxrkICmQzpRDT.jpg
+cover: https://i.loli.net/2021/05/24/1BsxrkICmQzpRDT.jpg
+
 ---
 
 ## pandas日常使用总结

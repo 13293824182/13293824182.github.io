@@ -5,8 +5,8 @@ categories: markdown
 abbrlink: 2a06da23
 date: 2021-05-14 23:07:01
 keywords: 
-top_img: https://i.loli.net/2021/05/20/9E3F1j7CJcSvpxk.jpg
-cover: https://i.loli.net/2021/05/20/9E3F1j7CJcSvpxk.jpg
+top_img: https://i.loli.net/2021/05/24/pDSVi5lMeRIALnG.png
+cover: https://i.loli.net/2021/05/24/pDSVi5lMeRIALnG.png
 mathjax: 
 description: markdown语法速查
 ---

@@ -5,7 +5,10 @@ tags: 回归评测指标
 mathjax: true
 abbrlink: 8df69e6b
 date: 2021-04-28 16:10:07
+top_img: https://i.loli.net/2021/05/24/oaG7K2NFcujmHnq.png
+cover: https://i.loli.net/2021/05/24/oaG7K2NFcujmHnq.png
 ---
+
 
 # Lightgbm 获取特征重要性
 
