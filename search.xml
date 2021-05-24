@@ -1,37 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hexo-换电脑更新博客</title>
-    <url>/archives/397eb78d.html</url>
-    <content><![CDATA[<p>开始</p>
-<span id="more"></span>
-<h2 id="步骤：在原电脑上操作，给-username-github-io-博客仓库创建hexo分支，并设为默认分支。（具体可参考这篇文章的操作，有图示）如果未给你的-github-账号添加过当前电脑生成的-ssh-key，需要创建-ssh-key-并添加到-github-账号上。（如何创建和添加-github-help-就有）随便一个目录下，命令行执行-git-clone-git-github-com-username-username-github-io-git-把仓库-clone-到本地。显示所有隐藏文件和文件夹，进入刚才-clone-到本地的仓库，删掉除了-git-文件夹以外的所有内容。命令行-cd-到-clone-的仓库，git-add-A-，git-commit-m-“–”，git-push-origin-hexo，把刚才删除操作引起的本地仓库变化更新到远程，此时刷新下-github-端博客hexo分支，应该已经被清空了。将上述-git-文件夹复制到本机本地博客根目录下（即含有-themes、source-等文件夹的那个目录），现在可以把上述-clone-的本地仓库删掉了，因为它已经没有用了，本机博客目录已经变成可以和-hexo-分支相连的仓库了。将博客目录下-themes-文件夹下每个主题文件夹里面的-git-gitignore-删掉。-cd-到博客目录，git-add-A-，git-commit-m-“–”，git-push-origin-hexo，将博客目录下所有文件更新到-hexo-分支。如果上一步没有删掉-git-gitignore，主题文件夹下内容将传不上去。至此原电脑上的操作结束。在新电脑上操作，先把新电脑上环境安装好，node-js、git、hexo，ssh-key-也创建和添加好。选好博客安装的目录，-git-clone-git-github-com-username-username-github-io-git-。cd-到博客目录，npm-install、hexo-g-hexo-s，安装依赖，生成和启动博客服务。正常的话，浏览器打开-localhost-4000-可以看到博客了。至此新电脑操作完毕。以后无论在哪台电脑上，更新以及提交博客，依次执行，git-pull，git-add-A-，git-commit-m-“–”，git-push-origin-hexo，hexo-clean-hexo-g-hexo-d-即可。">步骤：在原电脑上操作，给 <a href="http://username.github.io">username.github.io</a> 博客仓库创建hexo分支，并设为默认分支。（具体可参考这篇文章的操作，有图示）如果未给你的 github 账号添加过当前电脑生成的 ssh key，需要创建 ssh key 并添加到 github 账号上。（如何创建和添加 github help 就有）随便一个目录下，命令行执行 git clone <a href="mailto:git@github.com">git@github.com</a>:username/username.github.io.git 把仓库 clone 到本地。显示所有隐藏文件和文件夹，进入刚才 clone 到本地的仓库，删掉除了 .git 文件夹以外的所有内容。命令行 cd 到 clone 的仓库，git add -A ，git commit -m “–”，git push origin hexo，把刚才删除操作引起的本地仓库变化更新到远程，此时刷新下 github 端博客hexo分支，应该已经被清空了。将上述 .git 文件夹复制到本机本地博客根目录下（即含有 themes、source 等文件夹的那个目录），现在可以把上述 clone 的本地仓库删掉了，因为它已经没有用了，本机博客目录已经变成可以和 hexo 分支相连的仓库了。将博客目录下 themes 文件夹下每个主题文件夹里面的 .git .gitignore 删掉。 cd 到博客目录，git add -A ，git commit -m “–”，git push origin hexo，将博客目录下所有文件更新到 hexo 分支。如果上一步没有删掉 .git .gitignore，主题文件夹下内容将传不上去。至此原电脑上的操作结束。在新电脑上操作，先把新电脑上环境安装好，node.js、git、hexo，ssh key 也创建和添加好。选好博客安装的目录， git clone <a href="mailto:git@github.com">git@github.com</a>:username/username.github.io.git 。cd 到博客目录，npm install、hexo g &amp;&amp; hexo s，安装依赖，生成和启动博客服务。正常的话，浏览器打开 localhost:4000 可以看到博客了。至此新电脑操作完毕。以后无论在哪台电脑上，更新以及提交博客，依次执行，git pull，git add -A ，git commit -m “–”，git push origin hexo，hexo clean &amp;&amp; hexo g &amp;&amp; hexo d 即可。</h2>
-<p>链接：<a href="https://www.zhihu.com/question/21193762/answer/489124966">https://www.zhihu.com/question/21193762/answer/489124966</a></p>
-<p>更换电脑操作一样的，跟之前的环境搭建一样，安装gitsudo apt-get install git<br>
-设置git全局邮箱和用户名git config --global <a href="http://user.name">user.name</a> “yourgithubname”<br>
-git config --global user.email “yourgithubemail”<br>
-设置ssh keyssh-keygen -t rsa -C “youremail”<br>
-#生成后填到github和coding上（有coding平台的话）<br>
-#验证是否成功<br>
-ssh -T <a href="mailto:git@github.com">git@github.com</a><br>
-ssh -T <a href="mailto:git@git.coding.net">git@git.coding.net</a> #(有coding平台的话)<br>
-安装nodejssudo apt-get install nodejs<br>
-sudo apt-get install npm<br>
-安装hexo  sudo npm install hexo-cli -g<br>
-但是已经不需要初始化了，直接在任意文件夹下，git clone git@………………<br>
-然后进入克隆到的文件夹：cd <a href="http://xxx.github.io">xxx.github.io</a><br>
-npm install<br>
-npm install hexo-deployer-git --save<br>
-生成，部署：hexo g<br>
-hexo d<br>
-然后就可以开始写你的新博客了hexo new newpage<br>
-Tips:不要忘了，每次写完最好都把源文件上传一下git add .<br>
-git commit –m “xxxx”<br>
-git push<br>
-如果是在已经编辑过的电脑上，已经有clone文件夹了，那么，每次只要和远端同步一下就行了git pull</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/archives/4a17b156.html</url>
     <content><![CDATA[<p>开始</p>
@@ -51,6 +20,17 @@ git push<br>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>jupyter模块更改重新导入问题</title>
+    <url>/archives/2a06da23.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>jupyter</category>
+      </categories>
+      <tags>
+        <tag>jupyter</tag>
+      </tags>
   </entry>
   <entry>
     <title>lightgbm</title>
@@ -138,6 +118,50 @@ MAE：2.75 RMSE: 5.05</p>
       </tags>
   </entry>
   <entry>
+    <title>hexo-换电脑更新博客</title>
+    <url>/archives/397eb78d.html</url>
+    <content><![CDATA[<span id="more"></span>
+<h2 id="步骤：在原电脑上操作，给-username-github-io-博客仓库创建hexo分支，并设为默认分支。（具体可参考这篇文章的操作，有图示）如果未给你的-github-账号添加过当前电脑生成的-ssh-key，需要创建-ssh-key-并添加到-github-账号上。（如何创建和添加-github-help-就有）随便一个目录下，命令行执行-git-clone-git-github-com-username-username-github-io-git-把仓库-clone-到本地。显示所有隐藏文件和文件夹，进入刚才-clone-到本地的仓库，删掉除了-git-文件夹以外的所有内容。命令行-cd-到-clone-的仓库，git-add-A-，git-commit-m-“–”，git-push-origin-hexo，把刚才删除操作引起的本地仓库变化更新到远程，此时刷新下-github-端博客hexo分支，应该已经被清空了。将上述-git-文件夹复制到本机本地博客根目录下（即含有-themes、source-等文件夹的那个目录），现在可以把上述-clone-的本地仓库删掉了，因为它已经没有用了，本机博客目录已经变成可以和-hexo-分支相连的仓库了。将博客目录下-themes-文件夹下每个主题文件夹里面的-git-gitignore-删掉。-cd-到博客目录，git-add-A-，git-commit-m-“–”，git-push-origin-hexo，将博客目录下所有文件更新到-hexo-分支。如果上一步没有删掉-git-gitignore，主题文件夹下内容将传不上去。至此原电脑上的操作结束。在新电脑上操作，先把新电脑上环境安装好，node-js、git、hexo，ssh-key-也创建和添加好。选好博客安装的目录，-git-clone-git-github-com-username-username-github-io-git-。cd-到博客目录，npm-install、hexo-g-hexo-s，安装依赖，生成和启动博客服务。正常的话，浏览器打开-localhost-4000-可以看到博客了。至此新电脑操作完毕。以后无论在哪台电脑上，更新以及提交博客，依次执行，git-pull，git-add-A-，git-commit-m-“–”，git-push-origin-hexo，hexo-clean-hexo-g-hexo-d-即可。">步骤：在原电脑上操作，给 <a href="http://username.github.io">username.github.io</a> 博客仓库创建hexo分支，并设为默认分支。（具体可参考这篇文章的操作，有图示）如果未给你的 github 账号添加过当前电脑生成的 ssh key，需要创建 ssh key 并添加到 github 账号上。（如何创建和添加 github help 就有）随便一个目录下，命令行执行 git clone <a href="mailto:git@github.com">git@github.com</a>:username/username.github.io.git 把仓库 clone 到本地。显示所有隐藏文件和文件夹，进入刚才 clone 到本地的仓库，删掉除了 .git 文件夹以外的所有内容。命令行 cd 到 clone 的仓库，git add -A ，git commit -m “–”，git push origin hexo，把刚才删除操作引起的本地仓库变化更新到远程，此时刷新下 github 端博客hexo分支，应该已经被清空了。将上述 .git 文件夹复制到本机本地博客根目录下（即含有 themes、source 等文件夹的那个目录），现在可以把上述 clone 的本地仓库删掉了，因为它已经没有用了，本机博客目录已经变成可以和 hexo 分支相连的仓库了。将博客目录下 themes 文件夹下每个主题文件夹里面的 .git .gitignore 删掉。 cd 到博客目录，git add -A ，git commit -m “–”，git push origin hexo，将博客目录下所有文件更新到 hexo 分支。如果上一步没有删掉 .git .gitignore，主题文件夹下内容将传不上去。至此原电脑上的操作结束。在新电脑上操作，先把新电脑上环境安装好，node.js、git、hexo，ssh key 也创建和添加好。选好博客安装的目录， git clone <a href="mailto:git@github.com">git@github.com</a>:username/username.github.io.git 。cd 到博客目录，npm install、hexo g &amp;&amp; hexo s，安装依赖，生成和启动博客服务。正常的话，浏览器打开 localhost:4000 可以看到博客了。至此新电脑操作完毕。以后无论在哪台电脑上，更新以及提交博客，依次执行，git pull，git add -A ，git commit -m “–”，git push origin hexo，hexo clean &amp;&amp; hexo g &amp;&amp; hexo d 即可。</h2>
+<p>链接：<a href="https://www.zhihu.com/question/21193762/answer/489124966">https://www.zhihu.com/question/21193762/answer/489124966</a></p>
+<p>更换电脑操作一样的，跟之前的环境搭建一样，安装gitsudo apt-get install git<br>
+设置git全局邮箱和用户名git config --global <a href="http://user.name">user.name</a> “yourgithubname”<br>
+git config --global user.email “yourgithubemail”<br>
+设置ssh keyssh-keygen -t rsa -C “youremail”<br>
+#生成后填到github和coding上（有coding平台的话）<br>
+#验证是否成功<br>
+ssh -T <a href="mailto:git@github.com">git@github.com</a><br>
+ssh -T <a href="mailto:git@git.coding.net">git@git.coding.net</a> #(有coding平台的话)<br>
+安装nodejssudo apt-get install nodejs<br>
+sudo apt-get install npm<br>
+安装hexo  sudo npm install hexo-cli -g<br>
+但是已经不需要初始化了，直接在任意文件夹下，git clone git@………………<br>
+然后进入克隆到的文件夹：cd <a href="http://xxx.github.io">xxx.github.io</a><br>
+npm install<br>
+npm install hexo-deployer-git --save<br>
+生成，部署：hexo g<br>
+hexo d<br>
+然后就可以开始写你的新博客了hexo new newpage<br>
+Tips:不要忘了，每次写完最好都把源文件上传一下git add .<br>
+git commit –m “xxxx”<br>
+git push<br>
+如果是在已经编辑过的电脑上，已经有clone文件夹了，那么，每次只要和远端同步一下就行了git pull</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>pandas总结</title>
+    <url>/archives/b8b772a5.html</url>
+    <content><![CDATA[<h2 id="pandas日常使用总结">pandas日常使用总结</h2>
+<h3 id="pandas-中没有获取众数">pandas 中没有获取众数</h3>
+<p>思路：通过统计次数，并且获取到最大次数即为众数</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">data[[&#39;diff_days&#39;,&#39;cust_no&#39;]].groupby(&#39;cust_no&#39;).agg(lambda x: x.value_counts().index[0]).reset_index()</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>日常总结</category>
+      </categories>
+      <tags>
+        <tag>pandas</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>markdown语法记录</title>
     <url>/archives/2a06da23.html</url>
     <content><![CDATA[<h1>markdown 语法速查记录</h1>
@@ -162,25 +186,6 @@ MAE：2.75 RMSE: 5.05</p>
       </categories>
       <tags>
         <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>next主题配置</title>
-    <url>/archives/c67bcb84.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>pandas总结</title>
-    <url>/archives/b8b772a5.html</url>
-    <content><![CDATA[<h2 id="pandas日常使用总结">pandas日常使用总结</h2>
-<h3 id="pandas-中没有获取众数">pandas 中没有获取众数</h3>
-<p>思路：通过统计次数，并且获取到最大次数即为众数</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">data[[&#39;diff_days&#39;,&#39;cust_no&#39;]].groupby(&#39;cust_no&#39;).agg(lambda x: x.value_counts().index[0]).reset_index()</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>日常总结</category>
-      </categories>
-      <tags>
-        <tag>pandas</tag>
       </tags>
   </entry>
   <entry>
@@ -253,5 +258,24 @@ MAE：2.75 RMSE: 5.05</p>
       <tags>
         <tag>特征选择</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>字符串反转</title>
+    <url>/archives/8de7ec78.html</url>
+    <content><![CDATA[<!--more--->
+<p><a href="https://leetcode-cn.com/problems/reverse-string/">https://leetcode-cn.com/problems/reverse-string/</a></p>
+<p>编写一个函数，其作用是将输入的字符串反转过来。输入字符串以字符数组 char[] 的形式给出。</p>
+<p>不要给另外的数组分配额外的空间，你必须原地修改输入数组、使用 O(1) 的额外空间解决这一问题。</p>
+<p>你可以假设数组中的所有字符都是 ASCII 码表中的可打印字符。</p>
+<p>示例 1：</p>
+<p>输入：[“h”,“e”,“l”,“l”,“o”] 输出：[“o”,“l”,“l”,“e”,“h”] 示例 2：</p>
+<p>输入：[“H”,“a”,“n”,“n”,“a”,“h”] 输出：[“h”,“a”,“n”,“n”,“a”,“H”]</p>
+<p>python</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class Solution:</span><br><span class="line">    def reverseString(self,s:List[str])  -&gt; None:</span><br><span class="line">        left, rigth &#x3D; 0, len(s)</span><br><span class="line">        while left &lt; right:</span><br><span class="line">            s[left],s[right] &#x3D; s[right],s[left]</span><br><span class="line">            left +&#x3D; 1</span><br><span class="line">            rigth -&#x3D; 1</span><br></pre></td></tr></table></figure>
+<p>c++:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    void reverseString(vector&lt;char&gt;&amp; s)&#123;</span><br><span class="line">        for (int i &#x3D; 0, j &#x3D; s.size() - 1; i &lt; s.size()&#x2F;2; i++,j--)&#123;</span><br><span class="line">            swap(s[i],s[j]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>字符串</category>
+      </categories>
   </entry>
 </search>
