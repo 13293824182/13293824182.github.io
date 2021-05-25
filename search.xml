@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/archives/4a17b156.html</url>
+    <content><![CDATA[<p>开始</p>
+<span id="more"></span>
+<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>hexo-换电脑更新博客</title>
     <url>/archives/397eb78d.html</url>
     <content><![CDATA[<span id="more"></span>
@@ -29,38 +50,6 @@ git commit –m “xxxx”<br>
 git push<br>
 如果是在已经编辑过的电脑上，已经有clone文件夹了，那么，每次只要和远端同步一下就行了git pull</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/archives/4a17b156.html</url>
-    <content><![CDATA[<p>开始</p>
-<span id="more"></span>
-<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start">Quick Start</h2>
-<h3 id="Create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>jupyter模块更改重新导入问题</title>
-    <url>/archives/2a06da23.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>jupyter</category>
-      </categories>
-      <tags>
-        <tag>jupyter</tag>
-      </tags>
   </entry>
   <entry>
     <title>lightgbm</title>
@@ -145,6 +134,17 @@ MAE：2.75 RMSE: 5.05</p>
       </categories>
       <tags>
         <tag>回归评测指标</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>jupyter模块更改重新导入问题</title>
+    <url>/archives/2a06da23.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>jupyter</category>
+      </categories>
+      <tags>
+        <tag>jupyter</tag>
       </tags>
   </entry>
   <entry>
@@ -260,6 +260,26 @@ MAE：2.75 RMSE: 5.05</p>
       </tags>
   </entry>
   <entry>
+    <title>字符串按照规则翻转</title>
+    <url>/archives/f93ac400.html</url>
+    <content><![CDATA[<p><a href="https://leetcode-cn.com/problems/reverse-string-ii/">https://leetcode-cn.com/problems/reverse-string-ii/</a></p>
+<p>给定一个字符串 s 和一个整数 k，你需要对从字符串开头算起的每隔 2k 个字符的前 k 个字符进行反转。</p>
+<p>如果剩余字符少于 k 个，则将剩余字符全部反转。</p>
+<p>如果剩余字符小于 2k 但大于或等于 k 个，则反转前 k 个字符，其余字符保持原样。</p>
+<p>示例:</p>
+<p>输入: s = “abcdefg”, k = 2 输出: “bacdfeg”</p>
+<h2 id="思路：">思路：</h2>
+<p>每次向前移动2k，判断是否是超过字符串长度，没有就翻转前面k字符串，超过就全部翻转</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>():</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">reverseStr</span>(<span class="params">self,s,k</span>):</span></span><br><span class="line">        <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">        type s:str</span></span><br><span class="line"><span class="string">        type k:int</span></span><br><span class="line"><span class="string">        rtype: str</span></span><br><span class="line"><span class="string">        &#x27;&#x27;&#x27;</span></span><br><span class="line">        s = <span class="built_in">list</span>(s)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="built_in">len</span>(s),<span class="number">2</span>*k):</span><br><span class="line">            <span class="keyword">if</span> i + k &lt;= <span class="built_in">len</span>(s):</span><br><span class="line">                s[i:i+k] = s[i:i+k][::-<span class="number">1</span>]</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                s[i:] = s[i:][::-<span class="number">1</span>]</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">string <span class="title">reverseStr</span><span class="params">(string s, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; s.<span class="built_in">size</span>(); i += (k+k)) &#123;</span><br><span class="line">        <span class="string">&quot;&quot;</span><span class="string">&quot;</span></span><br><span class="line"><span class="string">        每次移动2k,并对前面k个字符串翻转</span></span><br><span class="line"><span class="string">        如果前面字符串的个数大于k</span></span><br><span class="line"><span class="string">        &quot;</span><span class="string">&quot;&quot;</span></span><br><span class="line">            <span class="keyword">if</span> (i + k &lt;= s.<span class="built_in">size</span>()) &#123;</span><br><span class="line">                <span class="built_in">reverse</span>(s.<span class="built_in">begin</span>() + i, s.<span class="built_in">begin</span>() + i + k);</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            <span class="built_in">reverse</span>(s.<span class="built_in">begin</span>() + i,s.<span class="built_in">begin</span>() + s.<span class="built_in">size</span>());</span><br><span class="line">            &#125;            </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> s;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>字符串</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>字符串反转</title>
     <url>/archives/8de7ec78.html</url>
     <content><![CDATA[<!--more--->
@@ -274,26 +294,6 @@ MAE：2.75 RMSE: 5.05</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class Solution:</span><br><span class="line">    def reverseString(self,s:List[str])  -&gt; None:</span><br><span class="line">        left, rigth &#x3D; 0, len(s)</span><br><span class="line">        while left &lt; right:</span><br><span class="line">            s[left],s[right] &#x3D; s[right],s[left]</span><br><span class="line">            left +&#x3D; 1</span><br><span class="line">            rigth -&#x3D; 1</span><br></pre></td></tr></table></figure>
 <p>c++:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    void reverseString(vector&lt;char&gt;&amp; s)&#123;</span><br><span class="line">        for (int i &#x3D; 0, j &#x3D; s.size() - 1; i &lt; s.size()&#x2F;2; i++,j--)&#123;</span><br><span class="line">            swap(s[i],s[j]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>leetcode</category>
-      </categories>
-      <tags>
-        <tag>字符串</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>字符串按照规则翻转</title>
-    <url>/archives/f93ac400.html</url>
-    <content><![CDATA[<p><a href="https://leetcode-cn.com/problems/reverse-string-ii/">https://leetcode-cn.com/problems/reverse-string-ii/</a></p>
-<p>给定一个字符串 s 和一个整数 k，你需要对从字符串开头算起的每隔 2k 个字符的前 k 个字符进行反转。</p>
-<p>如果剩余字符少于 k 个，则将剩余字符全部反转。</p>
-<p>如果剩余字符小于 2k 但大于或等于 k 个，则反转前 k 个字符，其余字符保持原样。</p>
-<p>示例:</p>
-<p>输入: s = “abcdefg”, k = 2 输出: “bacdfeg”</p>
-<h2 id="思路：">思路：</h2>
-<p>每次向前移动2k，判断是否是超过字符串长度，没有就翻转前面k字符串，超过就全部翻转</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>():</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">reverseStr</span>(<span class="params">self,s,k</span>):</span></span><br><span class="line">        <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">        type s:str</span></span><br><span class="line"><span class="string">        type k:int</span></span><br><span class="line"><span class="string">        rtype: str</span></span><br><span class="line"><span class="string">        &#x27;&#x27;&#x27;</span></span><br><span class="line">        s = <span class="built_in">list</span>(s)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="built_in">len</span>(s),<span class="number">2</span>*k):</span><br><span class="line">            <span class="keyword">if</span> i + k &lt;= <span class="built_in">len</span>(s):</span><br><span class="line">                s[i:i+k] = s[i:i+k][::-<span class="number">1</span>]</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                s[i:] = s[i:][::-<span class="number">1</span>]</span><br></pre></td></tr></table></figure>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">string <span class="title">reverseStr</span><span class="params">(string s, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; s.<span class="built_in">size</span>(); i += (k+k)) &#123;</span><br><span class="line">        <span class="string">&quot;&quot;</span><span class="string">&quot;</span></span><br><span class="line"><span class="string">        每次移动2k,并对前面k个字符串翻转</span></span><br><span class="line"><span class="string">        如果前面字符串的个数大于k</span></span><br><span class="line"><span class="string">        &quot;</span><span class="string">&quot;&quot;</span></span><br><span class="line">            <span class="keyword">if</span> (i + k &lt;= s.<span class="built_in">size</span>()) &#123;</span><br><span class="line">                <span class="built_in">reverse</span>(s.<span class="built_in">begin</span>() + i, s.<span class="built_in">begin</span>() + i + k);</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            <span class="built_in">reverse</span>(s.<span class="built_in">begin</span>() + i,s.<span class="built_in">begin</span>() + s.<span class="built_in">size</span>());</span><br><span class="line">            &#125;            </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> s;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>leetcode</category>
       </categories>
