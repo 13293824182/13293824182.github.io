@@ -52,6 +52,17 @@ git push<br>
 ]]></content>
   </entry>
   <entry>
+    <title>jupyter模块更改重新导入问题</title>
+    <url>/archives/2a06da23.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>jupyter</category>
+      </categories>
+      <tags>
+        <tag>jupyter</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>lightgbm</title>
     <url>/archives/8df69e6b.html</url>
     <content><![CDATA[<h1>Lightgbm 获取特征重要性</h1>
@@ -137,17 +148,6 @@ MAE：2.75 RMSE: 5.05</p>
       </tags>
   </entry>
   <entry>
-    <title>jupyter模块更改重新导入问题</title>
-    <url>/archives/2a06da23.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>jupyter</category>
-      </categories>
-      <tags>
-        <tag>jupyter</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>markdown语法记录</title>
     <url>/archives/2a06da23.html</url>
     <content><![CDATA[<h1>markdown 语法速查记录</h1>
@@ -186,6 +186,22 @@ MAE：2.75 RMSE: 5.05</p>
       </categories>
       <tags>
         <tag>pandas</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mysql</title>
+    <url>/archives/9520183a.html</url>
+    <content><![CDATA[<!---more--->
+<h3 id="从a中筛选数据，然后从筛选数据中b中筛选相关字段">从a中筛选数据，然后从筛选数据中b中筛选相关字段</h3>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">with</span> b <span class="keyword">as</span> (<span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> a)</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> b</span><br></pre></td></tr></table></figure>
+<h3 id="distinct-要放在最前面-结果只显示b-columns的结果">distinct 要放在最前面,结果只显示b_columns的结果</h3>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">distinct</span> b_column <span class="keyword">from</span> a</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>mysql</category>
+      </categories>
+      <tags>
+        <tag>经验总结</tag>
       </tags>
   </entry>
   <entry>
@@ -260,26 +276,6 @@ MAE：2.75 RMSE: 5.05</p>
       </tags>
   </entry>
   <entry>
-    <title>字符串按照规则翻转</title>
-    <url>/archives/f93ac400.html</url>
-    <content><![CDATA[<p><a href="https://leetcode-cn.com/problems/reverse-string-ii/">https://leetcode-cn.com/problems/reverse-string-ii/</a></p>
-<p>给定一个字符串 s 和一个整数 k，你需要对从字符串开头算起的每隔 2k 个字符的前 k 个字符进行反转。</p>
-<p>如果剩余字符少于 k 个，则将剩余字符全部反转。</p>
-<p>如果剩余字符小于 2k 但大于或等于 k 个，则反转前 k 个字符，其余字符保持原样。</p>
-<p>示例:</p>
-<p>输入: s = “abcdefg”, k = 2 输出: “bacdfeg”</p>
-<h2 id="思路：">思路：</h2>
-<p>每次向前移动2k，判断是否是超过字符串长度，没有就翻转前面k字符串，超过就全部翻转</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>():</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">reverseStr</span>(<span class="params">self,s,k</span>):</span></span><br><span class="line">        <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">        type s:str</span></span><br><span class="line"><span class="string">        type k:int</span></span><br><span class="line"><span class="string">        rtype: str</span></span><br><span class="line"><span class="string">        &#x27;&#x27;&#x27;</span></span><br><span class="line">        s = <span class="built_in">list</span>(s)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="built_in">len</span>(s),<span class="number">2</span>*k):</span><br><span class="line">            <span class="keyword">if</span> i + k &lt;= <span class="built_in">len</span>(s):</span><br><span class="line">                s[i:i+k] = s[i:i+k][::-<span class="number">1</span>]</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                s[i:] = s[i:][::-<span class="number">1</span>]</span><br></pre></td></tr></table></figure>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">string <span class="title">reverseStr</span><span class="params">(string s, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; s.<span class="built_in">size</span>(); i += (k+k)) &#123;</span><br><span class="line">        <span class="string">&quot;&quot;</span><span class="string">&quot;</span></span><br><span class="line"><span class="string">        每次移动2k,并对前面k个字符串翻转</span></span><br><span class="line"><span class="string">        如果前面字符串的个数大于k</span></span><br><span class="line"><span class="string">        &quot;</span><span class="string">&quot;&quot;</span></span><br><span class="line">            <span class="keyword">if</span> (i + k &lt;= s.<span class="built_in">size</span>()) &#123;</span><br><span class="line">                <span class="built_in">reverse</span>(s.<span class="built_in">begin</span>() + i, s.<span class="built_in">begin</span>() + i + k);</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            <span class="built_in">reverse</span>(s.<span class="built_in">begin</span>() + i,s.<span class="built_in">begin</span>() + s.<span class="built_in">size</span>());</span><br><span class="line">            &#125;            </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> s;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>leetcode</category>
-      </categories>
-      <tags>
-        <tag>字符串</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>字符串反转</title>
     <url>/archives/8de7ec78.html</url>
     <content><![CDATA[<!--more--->
@@ -300,5 +296,30 @@ MAE：2.75 RMSE: 5.05</p>
       <tags>
         <tag>字符串</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>字符串按照规则翻转</title>
+    <url>/archives/f93ac400.html</url>
+    <content><![CDATA[<p><a href="https://leetcode-cn.com/problems/reverse-string-ii/">https://leetcode-cn.com/problems/reverse-string-ii/</a></p>
+<p>给定一个字符串 s 和一个整数 k，你需要对从字符串开头算起的每隔 2k 个字符的前 k 个字符进行反转。</p>
+<p>如果剩余字符少于 k 个，则将剩余字符全部反转。</p>
+<p>如果剩余字符小于 2k 但大于或等于 k 个，则反转前 k 个字符，其余字符保持原样。</p>
+<p>示例:</p>
+<p>输入: s = “abcdefg”, k = 2 输出: “bacdfeg”</p>
+<h2 id="思路：">思路：</h2>
+<p>每次向前移动2k，判断是否是超过字符串长度，没有就翻转前面k字符串，超过就全部翻转</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>():</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">reverseStr</span>(<span class="params">self,s,k</span>):</span></span><br><span class="line">        <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">        type s:str</span></span><br><span class="line"><span class="string">        type k:int</span></span><br><span class="line"><span class="string">        rtype: str</span></span><br><span class="line"><span class="string">        &#x27;&#x27;&#x27;</span></span><br><span class="line">        s = <span class="built_in">list</span>(s)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="built_in">len</span>(s),<span class="number">2</span>*k):</span><br><span class="line">            <span class="keyword">if</span> i + k &lt;= <span class="built_in">len</span>(s):</span><br><span class="line">                s[i:i+k] = s[i:i+k][::-<span class="number">1</span>]</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                s[i:] = s[i:][::-<span class="number">1</span>]</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">string <span class="title">reverseStr</span><span class="params">(string s, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; s.<span class="built_in">size</span>(); i += (k+k)) &#123;</span><br><span class="line">        <span class="string">&quot;&quot;</span><span class="string">&quot;</span></span><br><span class="line"><span class="string">        每次移动2k,并对前面k个字符串翻转</span></span><br><span class="line"><span class="string">        如果前面字符串的个数大于k</span></span><br><span class="line"><span class="string">        &quot;</span><span class="string">&quot;&quot;</span></span><br><span class="line">            <span class="keyword">if</span> (i + k &lt;= s.<span class="built_in">size</span>()) &#123;</span><br><span class="line">                <span class="built_in">reverse</span>(s.<span class="built_in">begin</span>() + i, s.<span class="built_in">begin</span>() + i + k);</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            <span class="built_in">reverse</span>(s.<span class="built_in">begin</span>() + i,s.<span class="built_in">begin</span>() + s.<span class="built_in">size</span>());</span><br><span class="line">            &#125;            </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> s;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>字符串</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>英语学习第一天</title>
+    <url>/archives/40ec3d59.html</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
