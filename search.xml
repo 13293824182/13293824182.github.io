@@ -175,6 +175,32 @@ MAE：2.75 RMSE: 5.05</p>
       </tags>
   </entry>
   <entry>
+    <title>mysql</title>
+    <url>/archives/9520183a.html</url>
+    <content><![CDATA[<!---more--->
+<h3 id="从a中筛选数据，然后从筛选数据中b中筛选相关字段">从a中筛选数据，然后从筛选数据中b中筛选相关字段</h3>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">with</span> b <span class="keyword">as</span> (<span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> a),</span><br><span class="line">c <span class="keyword">as</span> (<span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> d) ##最后不加逗号</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> b</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> c (columns1，columns2) <span class="keyword">as</span> (<span class="keyword">select</span> columns1，columns2 <span class="keyword">from</span> d)</span><br></pre></td></tr></table></figure>
+<h3 id="distinct-要放在最前面-结果只显示b-columns的结果">distinct 要放在最前面,结果只显示b_columns的结果</h3>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">distinct</span> b_column <span class="keyword">from</span> a</span><br></pre></td></tr></table></figure>
+<h3 id="创建临时表并且使用完表会删除">创建临时表并且使用完表会删除</h3>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 如果存在删除</span></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> IF <span class="keyword">EXISTS</span> final_list2;</span><br><span class="line"><span class="keyword">DECLARE</span> <span class="keyword">GLOBAL</span> TEMPORARY <span class="keyword">TABLE</span> final_list2(</span><br><span class="line">    order_no_22 <span class="type">int</span> <span class="keyword">null</span>,</span><br><span class="line">    batch_date_new <span class="type">timestamp</span> <span class="keyword">null</span>,</span><br><span class="line">    pay_no <span class="type">int</span> <span class="keyword">null</span>,</span><br><span class="line">    check_no <span class="type">int</span> <span class="keyword">null</span>,</span><br><span class="line">    batch_no <span class="type">int</span> <span class="keyword">null</span>,</span><br><span class="line">    batch_date <span class="type">timestamp</span> <span class="keyword">null</span>,</span><br><span class="line">    order_type <span class="type">int</span> <span class="keyword">null</span>,</span><br><span class="line">    order_no <span class="type">int</span> <span class="keyword">null</span></span><br><span class="line">    )</span><br><span class="line">    <span class="keyword">ON</span></span><br><span class="line"><span class="keyword">COMMIT</span> PRESERVE <span class="keyword">ROWS</span></span><br><span class="line"><span class="keyword">WITH</span> NORECOVERY;</span><br></pre></td></tr></table></figure>
+<h3 id="条件语句">条件语句</h3>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">不等于：<span class="operator">&lt;&gt;</span></span><br><span class="line">不为空：<span class="keyword">is</span> <span class="keyword">not</span> <span class="keyword">null</span> </span><br><span class="line">if (sex <span class="operator">=</span> &quot;男&quot;,&quot;女&quot;,&quot;男&quot;)  <span class="comment">-- 如果第一个为真 为女  假为男  实现男女互换</span></span><br><span class="line">ifnull(a,b)  <span class="comment">-- 如果a不为空，结果为a；如果a为空，结果为b</span></span><br></pre></td></tr></table></figure>
+<h3 id="更新数据-最好不要采用join操作会有重复数据导致结果增多">更新数据 最好不要采用join操作会有重复数据导致结果增多</h3>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 如果更新多个字段在（）内添加就好</span></span><br><span class="line">update itfendonl.cust_doc_list_test_check_batch_bank a</span><br><span class="line"><span class="keyword">set</span> (batch_date_new,b)<span class="operator">=</span>(<span class="keyword">select</span> batch_date_new,b</span><br><span class="line"><span class="keyword">from</span> final_list2 b</span><br><span class="line"><span class="keyword">where</span> a.pay_no<span class="operator">=</span>b.pay_no)</span><br><span class="line"><span class="comment">-- where a.bank_date is null</span></span><br></pre></td></tr></table></figure>
+<h3 id="增加新字段">增加新字段</h3>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> table_name <span class="keyword">ADD</span> column_name datatype</span><br></pre></td></tr></table></figure>
+<h3 id="在表中插入数据-更新表时候不能使用union，需要新建一个临时表">在表中插入数据, 更新表时候不能使用union，需要新建一个临时表</h3>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> IF <span class="keyword">EXISTS</span> pay_list;</span><br><span class="line"><span class="keyword">DECLARE</span> <span class="keyword">GLOBAL</span> TEMPORARY <span class="keyword">TABLE</span> pay_list(</span><br><span class="line">    batch_no <span class="type">int</span> <span class="keyword">null</span>,</span><br><span class="line">    flag <span class="type">int</span> <span class="keyword">null</span>,</span><br><span class="line">    pay_date <span class="type">timestamp</span> <span class="keyword">null</span>,</span><br><span class="line">    bank_date <span class="type">timestamp</span> <span class="keyword">null</span></span><br><span class="line">        )</span><br><span class="line">        <span class="keyword">ON</span></span><br><span class="line"><span class="keyword">COMMIT</span> PRESERVE <span class="keyword">ROWS</span></span><br><span class="line"><span class="keyword">WITH</span> NORECOVERY;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span>  pay_list (batch_no,bank_date,flag,pay_date)  </span><br><span class="line"><span class="keyword">select</span> <span class="keyword">distinct</span> b.batch_no,b.bank_date, b.flag,b.pay_date</span><br><span class="line"><span class="keyword">from</span> itwennyt.cust_payment_list_2 b</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>mysql</category>
+      </categories>
+      <tags>
+        <tag>经验总结</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>pandas总结</title>
     <url>/archives/b8b772a5.html</url>
     <content><![CDATA[<h2 id="pandas日常使用总结">pandas日常使用总结</h2>
@@ -186,22 +212,6 @@ MAE：2.75 RMSE: 5.05</p>
       </categories>
       <tags>
         <tag>pandas</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>mysql</title>
-    <url>/archives/9520183a.html</url>
-    <content><![CDATA[<!---more--->
-<h3 id="从a中筛选数据，然后从筛选数据中b中筛选相关字段">从a中筛选数据，然后从筛选数据中b中筛选相关字段</h3>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">with</span> b <span class="keyword">as</span> (<span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> a)</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> b</span><br></pre></td></tr></table></figure>
-<h3 id="distinct-要放在最前面-结果只显示b-columns的结果">distinct 要放在最前面,结果只显示b_columns的结果</h3>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">distinct</span> b_column <span class="keyword">from</span> a</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>mysql</category>
-      </categories>
-      <tags>
-        <tag>经验总结</tag>
       </tags>
   </entry>
   <entry>
