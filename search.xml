@@ -222,21 +222,21 @@ MAE：2.75 RMSE: 5.05</p>
     <content><![CDATA[<h1>二叉树的种类</h1>
 <h2 id="满二叉树">满二叉树</h2>
 <p>  满二叉树：一棵二叉树只有度为0和度为2的结点，并且度为0的结点在同一层上面，那么这颗二叉树为满二叉树<br>
-<img src="/archives/e85d694a/%E4%BA%8C%E5%8F%89%E6%A0%91%5C%E6%BB%A1%E4%BA%8C%E5%8F%89%E6%A0%91.png" alt="&quot;满二叉树&quot;"></p>
+<img src="/archives/e85d694a/%E6%BB%A1%E4%BA%8C%E5%8F%89%E6%A0%91.png" alt="&quot;满二叉树&quot;"></p>
 <h2 id="完全二叉树">完全二叉树</h2>
 <p>   完全二叉树，除了最底层节点没有填满外，其余每层节点都达到了最大值，并且最下面一层的节点都集中在嘴边的位置。若底层为h层，则该层包含<br>
 $$ 1 到 2 ^ h - 1 $$<br>
 个节点。<br>
-<img src="/archives/e85d694a/%E4%BA%8C%E5%8F%89%E6%A0%91%5C%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91.png" alt="&quot;完全二叉树&quot;"></p>
+<img src="/archives/e85d694a/%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91.png" alt="&quot;完全二叉树&quot;"></p>
 <h2 id="二叉搜索树">二叉搜索树</h2>
 <p>二叉搜索树是有数值的有序树</p>
 <p>   <strong>若左子树不为空，则左子树上的节点都小于根节点</strong></p>
 <p>   <strong>若右子树不为空，则右子树上面的节点都大于根节点</strong></p>
 <p>   <strong>左子树和右子树都为二叉排序树</strong><br>
-<img src="/archives/e85d694a/%E4%BA%8C%E5%8F%89%E6%A0%91%5C%E6%90%9C%E7%B4%A2%E6%A0%91.png" alt="&quot;搜索树&quot;"></p>
+<img src="/archives/e85d694a/%E6%90%9C%E7%B4%A2%E6%A0%91.png" alt="&quot;搜索树&quot;"></p>
 <h2 id="平衡二叉树">平衡二叉树</h2>
 <p>平衡二叉树具有一下性质：它是一棵空树或者它的左右子树的高度绝对值差不超过一，并且左右子树都是一颗平衡二叉树。<br>
-<img src="/archives/e85d694a/%E4%BA%8C%E5%8F%89%E6%A0%91%5C%E5%B9%B3%E8%A1%A1.png" alt="&quot;平衡二叉树&quot;"><br>
+<img src="/archives/e85d694a/%E5%B9%B3%E8%A1%A1.png" alt="&quot;平衡二叉树&quot;"><br>
 C++中map、set、multimap，multiset的底层实现都是平衡⼆叉搜索树，所以map、set的增删操作时间时间复杂度是logn</p>
 <h1>二叉树的存储方式</h1>
 <p>二叉树可以时链式存储和顺序存储</p>
