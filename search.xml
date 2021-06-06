@@ -22,6 +22,47 @@
 ]]></content>
   </entry>
   <entry>
+    <title>hexo-换电脑更新博客</title>
+    <url>/archives/397eb78d.html</url>
+    <content><![CDATA[<span id="more"></span>
+<h2 id="步骤：在原电脑上操作，给-username-github-io-博客仓库创建hexo分支，并设为默认分支。（具体可参考这篇文章的操作，有图示）如果未给你的-github-账号添加过当前电脑生成的-ssh-key，需要创建-ssh-key-并添加到-github-账号上。（如何创建和添加-github-help-就有）随便一个目录下，命令行执行-git-clone-git-github-com-username-username-github-io-git-把仓库-clone-到本地。显示所有隐藏文件和文件夹，进入刚才-clone-到本地的仓库，删掉除了-git-文件夹以外的所有内容。命令行-cd-到-clone-的仓库，git-add-A-，git-commit-m-“–”，git-push-origin-hexo，把刚才删除操作引起的本地仓库变化更新到远程，此时刷新下-github-端博客hexo分支，应该已经被清空了。将上述-git-文件夹复制到本机本地博客根目录下（即含有-themes、source-等文件夹的那个目录），现在可以把上述-clone-的本地仓库删掉了，因为它已经没有用了，本机博客目录已经变成可以和-hexo-分支相连的仓库了。将博客目录下-themes-文件夹下每个主题文件夹里面的-git-gitignore-删掉。-cd-到博客目录，git-add-A-，git-commit-m-“–”，git-push-origin-hexo，将博客目录下所有文件更新到-hexo-分支。如果上一步没有删掉-git-gitignore，主题文件夹下内容将传不上去。至此原电脑上的操作结束。在新电脑上操作，先把新电脑上环境安装好，node-js、git、hexo，ssh-key-也创建和添加好。选好博客安装的目录，-git-clone-git-github-com-username-username-github-io-git-。cd-到博客目录，npm-install、hexo-g-hexo-s，安装依赖，生成和启动博客服务。正常的话，浏览器打开-localhost-4000-可以看到博客了。至此新电脑操作完毕。以后无论在哪台电脑上，更新以及提交博客，依次执行，git-pull，git-add-A-，git-commit-m-“–”，git-push-origin-hexo，hexo-clean-hexo-g-hexo-d-即可。">步骤：在原电脑上操作，给 <a href="http://username.github.io">username.github.io</a> 博客仓库创建hexo分支，并设为默认分支。（具体可参考这篇文章的操作，有图示）如果未给你的 github 账号添加过当前电脑生成的 ssh key，需要创建 ssh key 并添加到 github 账号上。（如何创建和添加 github help 就有）随便一个目录下，命令行执行 git clone <a href="mailto:git@github.com">git@github.com</a>:username/username.github.io.git 把仓库 clone 到本地。显示所有隐藏文件和文件夹，进入刚才 clone 到本地的仓库，删掉除了 .git 文件夹以外的所有内容。命令行 cd 到 clone 的仓库，git add -A ，git commit -m “–”，git push origin hexo，把刚才删除操作引起的本地仓库变化更新到远程，此时刷新下 github 端博客hexo分支，应该已经被清空了。将上述 .git 文件夹复制到本机本地博客根目录下（即含有 themes、source 等文件夹的那个目录），现在可以把上述 clone 的本地仓库删掉了，因为它已经没有用了，本机博客目录已经变成可以和 hexo 分支相连的仓库了。将博客目录下 themes 文件夹下每个主题文件夹里面的 .git .gitignore 删掉。 cd 到博客目录，git add -A ，git commit -m “–”，git push origin hexo，将博客目录下所有文件更新到 hexo 分支。如果上一步没有删掉 .git .gitignore，主题文件夹下内容将传不上去。至此原电脑上的操作结束。在新电脑上操作，先把新电脑上环境安装好，node.js、git、hexo，ssh key 也创建和添加好。选好博客安装的目录， git clone <a href="mailto:git@github.com">git@github.com</a>:username/username.github.io.git 。cd 到博客目录，npm install、hexo g &amp;&amp; hexo s，安装依赖，生成和启动博客服务。正常的话，浏览器打开 localhost:4000 可以看到博客了。至此新电脑操作完毕。以后无论在哪台电脑上，更新以及提交博客，依次执行，git pull，git add -A ，git commit -m “–”，git push origin hexo，hexo clean &amp;&amp; hexo g &amp;&amp; hexo d 即可。</h2>
+<p>链接：<a href="https://www.zhihu.com/question/21193762/answer/489124966">https://www.zhihu.com/question/21193762/answer/489124966</a></p>
+<p>更换电脑操作一样的，跟之前的环境搭建一样，安装gitsudo apt-get install git<br>
+设置git全局邮箱和用户名git config --global <a href="http://user.name">user.name</a> “yourgithubname”<br>
+git config --global user.email “yourgithubemail”<br>
+设置ssh keyssh-keygen -t rsa -C “youremail”<br>
+#生成后填到github和coding上（有coding平台的话）<br>
+#验证是否成功<br>
+ssh -T <a href="mailto:git@github.com">git@github.com</a><br>
+ssh -T <a href="mailto:git@git.coding.net">git@git.coding.net</a> #(有coding平台的话)<br>
+安装nodejssudo apt-get install nodejs<br>
+sudo apt-get install npm<br>
+安装hexo  sudo npm install hexo-cli -g<br>
+但是已经不需要初始化了，直接在任意文件夹下，git clone git@………………<br>
+然后进入克隆到的文件夹：cd <a href="http://xxx.github.io">xxx.github.io</a><br>
+npm install<br>
+npm install hexo-deployer-git --save<br>
+生成，部署：hexo g<br>
+hexo d<br>
+然后就可以开始写你的新博客了hexo new newpage<br>
+Tips:不要忘了，每次写完最好都把源文件上传一下git add .<br>
+git commit –m “xxxx”<br>
+git push<br>
+如果是在已经编辑过的电脑上，已经有clone文件夹了，那么，每次只要和远端同步一下就行了git pull</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>jupyter模块更改重新导入问题</title>
+    <url>/archives/2a06da23.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>jupyter</category>
+      </categories>
+      <tags>
+        <tag>jupyter</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>lightgbm</title>
     <url>/archives/8df69e6b.html</url>
     <content><![CDATA[<h1>Lightgbm 获取特征重要性</h1>
@@ -107,36 +148,6 @@ MAE：2.75 RMSE: 5.05</p>
       </tags>
   </entry>
   <entry>
-    <title>hexo-换电脑更新博客</title>
-    <url>/archives/397eb78d.html</url>
-    <content><![CDATA[<span id="more"></span>
-<h2 id="步骤：在原电脑上操作，给-username-github-io-博客仓库创建hexo分支，并设为默认分支。（具体可参考这篇文章的操作，有图示）如果未给你的-github-账号添加过当前电脑生成的-ssh-key，需要创建-ssh-key-并添加到-github-账号上。（如何创建和添加-github-help-就有）随便一个目录下，命令行执行-git-clone-git-github-com-username-username-github-io-git-把仓库-clone-到本地。显示所有隐藏文件和文件夹，进入刚才-clone-到本地的仓库，删掉除了-git-文件夹以外的所有内容。命令行-cd-到-clone-的仓库，git-add-A-，git-commit-m-“–”，git-push-origin-hexo，把刚才删除操作引起的本地仓库变化更新到远程，此时刷新下-github-端博客hexo分支，应该已经被清空了。将上述-git-文件夹复制到本机本地博客根目录下（即含有-themes、source-等文件夹的那个目录），现在可以把上述-clone-的本地仓库删掉了，因为它已经没有用了，本机博客目录已经变成可以和-hexo-分支相连的仓库了。将博客目录下-themes-文件夹下每个主题文件夹里面的-git-gitignore-删掉。-cd-到博客目录，git-add-A-，git-commit-m-“–”，git-push-origin-hexo，将博客目录下所有文件更新到-hexo-分支。如果上一步没有删掉-git-gitignore，主题文件夹下内容将传不上去。至此原电脑上的操作结束。在新电脑上操作，先把新电脑上环境安装好，node-js、git、hexo，ssh-key-也创建和添加好。选好博客安装的目录，-git-clone-git-github-com-username-username-github-io-git-。cd-到博客目录，npm-install、hexo-g-hexo-s，安装依赖，生成和启动博客服务。正常的话，浏览器打开-localhost-4000-可以看到博客了。至此新电脑操作完毕。以后无论在哪台电脑上，更新以及提交博客，依次执行，git-pull，git-add-A-，git-commit-m-“–”，git-push-origin-hexo，hexo-clean-hexo-g-hexo-d-即可。">步骤：在原电脑上操作，给 <a href="http://username.github.io">username.github.io</a> 博客仓库创建hexo分支，并设为默认分支。（具体可参考这篇文章的操作，有图示）如果未给你的 github 账号添加过当前电脑生成的 ssh key，需要创建 ssh key 并添加到 github 账号上。（如何创建和添加 github help 就有）随便一个目录下，命令行执行 git clone <a href="mailto:git@github.com">git@github.com</a>:username/username.github.io.git 把仓库 clone 到本地。显示所有隐藏文件和文件夹，进入刚才 clone 到本地的仓库，删掉除了 .git 文件夹以外的所有内容。命令行 cd 到 clone 的仓库，git add -A ，git commit -m “–”，git push origin hexo，把刚才删除操作引起的本地仓库变化更新到远程，此时刷新下 github 端博客hexo分支，应该已经被清空了。将上述 .git 文件夹复制到本机本地博客根目录下（即含有 themes、source 等文件夹的那个目录），现在可以把上述 clone 的本地仓库删掉了，因为它已经没有用了，本机博客目录已经变成可以和 hexo 分支相连的仓库了。将博客目录下 themes 文件夹下每个主题文件夹里面的 .git .gitignore 删掉。 cd 到博客目录，git add -A ，git commit -m “–”，git push origin hexo，将博客目录下所有文件更新到 hexo 分支。如果上一步没有删掉 .git .gitignore，主题文件夹下内容将传不上去。至此原电脑上的操作结束。在新电脑上操作，先把新电脑上环境安装好，node.js、git、hexo，ssh key 也创建和添加好。选好博客安装的目录， git clone <a href="mailto:git@github.com">git@github.com</a>:username/username.github.io.git 。cd 到博客目录，npm install、hexo g &amp;&amp; hexo s，安装依赖，生成和启动博客服务。正常的话，浏览器打开 localhost:4000 可以看到博客了。至此新电脑操作完毕。以后无论在哪台电脑上，更新以及提交博客，依次执行，git pull，git add -A ，git commit -m “–”，git push origin hexo，hexo clean &amp;&amp; hexo g &amp;&amp; hexo d 即可。</h2>
-<p>链接：<a href="https://www.zhihu.com/question/21193762/answer/489124966">https://www.zhihu.com/question/21193762/answer/489124966</a></p>
-<p>更换电脑操作一样的，跟之前的环境搭建一样，安装gitsudo apt-get install git<br>
-设置git全局邮箱和用户名git config --global <a href="http://user.name">user.name</a> “yourgithubname”<br>
-git config --global user.email “yourgithubemail”<br>
-设置ssh keyssh-keygen -t rsa -C “youremail”<br>
-#生成后填到github和coding上（有coding平台的话）<br>
-#验证是否成功<br>
-ssh -T <a href="mailto:git@github.com">git@github.com</a><br>
-ssh -T <a href="mailto:git@git.coding.net">git@git.coding.net</a> #(有coding平台的话)<br>
-安装nodejssudo apt-get install nodejs<br>
-sudo apt-get install npm<br>
-安装hexo  sudo npm install hexo-cli -g<br>
-但是已经不需要初始化了，直接在任意文件夹下，git clone git@………………<br>
-然后进入克隆到的文件夹：cd <a href="http://xxx.github.io">xxx.github.io</a><br>
-npm install<br>
-npm install hexo-deployer-git --save<br>
-生成，部署：hexo g<br>
-hexo d<br>
-然后就可以开始写你的新博客了hexo new newpage<br>
-Tips:不要忘了，每次写完最好都把源文件上传一下git add .<br>
-git commit –m “xxxx”<br>
-git push<br>
-如果是在已经编辑过的电脑上，已经有clone文件夹了，那么，每次只要和远端同步一下就行了git pull</p>
-]]></content>
-  </entry>
-  <entry>
     <title>markdown语法记录</title>
     <url>/archives/2a06da23.html</url>
     <content><![CDATA[<h1>markdown 语法速查记录</h1>
@@ -163,17 +174,6 @@ git push<br>
       </categories>
       <tags>
         <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>jupyter模块更改重新导入问题</title>
-    <url>/archives/2a06da23.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>jupyter</category>
-      </categories>
-      <tags>
-        <tag>jupyter</tag>
       </tags>
   </entry>
   <entry>
@@ -241,8 +241,8 @@ C++中map、set、multimap，multiset的底层实现都是平衡⼆叉搜索树�
 <h1>二叉树的存储方式</h1>
 <p>二叉树可以时链式存储和顺序存储</p>
 <p>链式存储采用是指针方式存储（内存分开的），顺序存储采用数组方式储存（内存是连续的）<br>
-<img src="/archives/e85d694a/%E4%BA%8C%E5%8F%89%E6%A0%91%5C%E9%93%BE%E5%BC%8F.png" alt="&quot;链式&quot;"><br>
-<img src="/archives/e85d694a/%E4%BA%8C%E5%8F%89%E6%A0%91%5C%E6%95%B0%E7%BB%84.png" alt="&quot;数组&quot;"></p>
+<img src="/archives/e85d694a/%E9%93%BE%E5%BC%8F.png" alt="&quot;链式&quot;"><br>
+<img src="/archives/e85d694a/%E6%95%B0%E7%BB%84.png" alt="&quot;数组&quot;"></p>
 <h1>二叉树的遍历方式</h1>
 <p>二叉树主要有两种遍历方式：</p>
 <ol>
@@ -458,6 +458,7 @@ he went to standford.
 ]]></content>
       <categories>
         <category>英语</category>
+        <category>表达总结</category>
       </categories>
       <tags>
         <tag>english</tag>
